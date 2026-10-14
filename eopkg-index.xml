@@ -1,0 +1,151 @@
+    <PISI>
+        <Distribution>
+            <SourceName>Solus</SourceName>
+            <Description><![CDATA[Linuxon EOPKG Repository]]></Description>
+            <Description lang="en"><![CDATA[Linuxon EOPKG Repository]]></Description>
+            <Description lang="fr"><![CDATA[Dépôt EOPKG de Linuxon]]></Description>
+            <Version>1</Version>
+            <Type>main</Type>
+            <BinaryName>Solus</BinaryName>
+            <Obsoletes>
+            </Obsoletes>
+        </Distribution>
+        <Package>
+            <Name>btrfsmgr-gui</Name>
+            <Summary xml:lang="en"><![CDATA[BTRFS snapshot manager GUI - create, list, restore, and automate BTRFS subvolume snapshots]]></Summary>
+            <Summary xml:lang="fr"><![CDATA[Gestionnaire d'instantanés BTRFS en interface graphique — créer, lister, restaurer et automatiser les instantanés de sous-volumes BTRFS]]></Summary>
+            <Description xml:lang="en"><![CDATA[btrfsmgr-gui is a GTK3 graphical tool for managing BTRFS subvolume snapshots on Linux.
+It supports creating, listing, restoring, and deleting snapshots; scheduling
+automatic snapshots via systemd timers with a retention policy; and generating
+boot entries (GRUB / systemd-boot) so you can boot directly into a snapshot.
+Restore is a CoW swap (two renames) - no data is copied.
+It reuses the business logic of btrfsmgr (TUI).
+Requires btrfs-progs, GTK3 / PyGObject and Python 3.8+.
+Unofficial; not affiliated with Solus or the BTRFS project.]]></Description>
+            <Description xml:lang="fr"><![CDATA[btrfsmgr-gui est une interface graphique (GTK3) de gestion des instantanés de
+sous-volumes BTRFS sous Linux. Elle permet de créer, lister, restaurer et
+supprimer des instantanés ; de planifier des instantanés automatiques via des
+timers systemd avec une politique de rétention ; et de générer des entrées de
+démarrage (GRUB / systemd-boot) pour booter directement sur un instantané. La
+restauration est un échange CoW (deux renommages) — aucune donnée n'est copiée.
+Réutilise la logique métier de btrfsmgr (TUI). Nécessite btrfs-progs, GTK3 /
+PyGObject et Python 3.8+. Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Description>
+            <PartOf>system.utilities</PartOf>
+            <License>GPL-3.0-or-later</License>
+            <RuntimeDependencies>
+            </RuntimeDependencies>
+            <History>
+                <Update release="1">
+                    <Date>2026-10-09</Date>
+                    <Version>1.1.2</Version>
+                    <Comment><![CDATA[btrfsmgr-gui 1.1.2 initial package]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Update>
+            </History>
+            <BuildHost>solus-local</BuildHost>
+            <Distribution>Solus</Distribution>
+            <DistributionRelease>1</DistributionRelease>
+            <Architecture>x86_64</Architecture>
+            <InstalledSize>203987</InstalledSize>
+            <PackageSize>54022</PackageSize>
+            <PackageHash>b5feb44c0a182868aedab22f7ec0d509e61aa6ef</PackageHash>
+            <PackageURI>b/btrfsmgr-gui/btrfsmgr-gui-1.1.2-1-1-x86_64.eopkg</PackageURI>
+            <PackageFormat>1.2</PackageFormat>
+            <Source>
+                <Name>btrfsmgr-gui</Name>
+                <Homepage>https://depoa.julien68.fr/Linuxon/btrfsmgr-gui</Homepage>
+                <Packager>
+                    <Name>Julien</Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Packager>
+            </Source>
+        </Package>
+        <Package>
+            <Name>btrfsmgr</Name>
+            <Summary xml:lang="en"><![CDATA[BTRFS snapshot manager TUI - create, list, restore, and automate BTRFS subvolume snapshots]]></Summary>
+            <Summary xml:lang="fr"><![CDATA[Gestionnaire d'instantanés BTRFS en TUI — créer, lister, restaurer et automatiser les instantanés de sous-volumes BTRFS]]></Summary>
+            <Description xml:lang="en"><![CDATA[btrfsmgr is a TUI tool for managing BTRFS subvolume snapshots on Linux.
+It supports creating, listing, restoring, and deleting snapshots; scheduling
+automatic snapshots via systemd timers with a retention policy; and generating
+boot entries (GRUB / systemd-boot) so you can boot directly into a snapshot.
+Restore is a CoW swap (two renames) - no data is copied.
+Requires btrfs-progs and Python 3.8+ (standard library only, no third-party
+dependencies). Unofficial; not affiliated with Solus or the BTRFS project.]]></Description>
+            <Description xml:lang="fr"><![CDATA[btrfsmgr est un outil TUI pour gérer les instantanés de sous-volumes BTRFS
+sur Linux. Il permet de créer, lister, restaurer et supprimer des instantanés ;
+de planifier des instantanés automatiques via des timers systemd avec une
+politique de rétention ; et de générer des entrées de démarrage (GRUB /
+systemd-boot) pour booter directement sur un instantané. La restauration est
+un échange CoW (deux renommages) — aucune donnée n'est copiée. Nécessite
+btrfs-progs et Python 3.8+ (bibliothèque standard uniquement, sans dépendance
+tierce). Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Description>
+            <PartOf>system.utilities</PartOf>
+            <License>GPL-3.0-or-later</License>
+            <RuntimeDependencies>
+            </RuntimeDependencies>
+            <History>
+                <Update release="1">
+                    <Date>2026-10-11</Date>
+                    <Version>1.0.12</Version>
+                    <Comment><![CDATA[btrfsmgr 1.0.12 initial package]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Update>
+            </History>
+            <BuildHost>solus-local</BuildHost>
+            <Distribution>Solus</Distribution>
+            <DistributionRelease>1</DistributionRelease>
+            <Architecture>x86_64</Architecture>
+            <InstalledSize>173092</InstalledSize>
+            <PackageSize>47252</PackageSize>
+            <PackageHash>1bdd944cdc67bb3fd2d376a11b06af20a982faa4</PackageHash>
+            <PackageURI>b/btrfsmgr/btrfsmgr-1.0.12-1-1-x86_64.eopkg</PackageURI>
+            <PackageFormat>1.2</PackageFormat>
+            <Source>
+                <Name>btrfsmgr</Name>
+                <Homepage>https://depoa.julien68.fr/Linuxon/btrfsmgr</Homepage>
+                <Packager>
+                    <Name>Julien</Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Packager>
+            </Source>
+        </Package>
+        <Package>
+            <Name>deb-to-eopkg</Name>
+            <Summary xml:lang="en"><![CDATA[Convert a Debian .deb package into a Solus .eopkg package.]]></Summary>
+            <Summary xml:lang="fr"><![CDATA[]]></Summary>
+            <Description xml:lang="en"><![CDATA[deb-to-eopkg is a small Rust tool that converts a Debian .deb package into an installable Solus .eopkg package. It reads the ar+tar structure of the .deb directly (no dpkg-deb) - data.tar compressed with gzip, xz, bzip2, lzma or zstd - and writes a conformant .eopkg (ZIP of metadata.xml, files.xml and install.tar.xz), preserving file types, modes and symlinks/hardlinks. Static binary, no runtime dependencies. Usage: deb-to-eopkg package.deb destination/]]></Description>
+            <Description xml:lang="fr"><![CDATA[]]></Description>
+            <PartOf>system.utilities</PartOf>
+            <License>GPL-3.0</License>
+            <RuntimeDependencies>
+            </RuntimeDependencies>
+            <History>
+                <Update release="1">
+                    <Date>2026-10-12</Date>
+                    <Version>2.2.0</Version>
+                    <Comment><![CDATA[Rust rewrite of the conversion tool.]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien@example.com</Email>
+                </Update>
+            </History>
+            <BuildHost>solus-local</BuildHost>
+            <Distribution>Solus</Distribution>
+            <DistributionRelease>1</DistributionRelease>
+            <Architecture>x86_64</Architecture>
+            <InstalledSize>1337619</InstalledSize>
+            <PackageSize>519207</PackageSize>
+            <PackageHash>904995d84f96b77e35928c511488bca57f1bf16a</PackageHash>
+            <PackageURI>d/deb-to-eopkg/deb-to-eopkg-2.2.0-1-1-x86_64.eopkg</PackageURI>
+            <PackageFormat>1.2</PackageFormat>
+            <Source>
+                <Name>deb-to-eopkg</Name>
+                <Homepage>https://example.com</Homepage>
+                <Packager>
+                    <Name>Julien</Name>
+                    <Email>julien@example.com</Email>
+                </Packager>
+            </Source>
+        </Package>
+    </PISI>
