@@ -31,22 +31,28 @@ http://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
 
 ### Commandes (eopkg 5.0)
 
+#### Ajouter le dépôt (syntaxe: add-repo <nom> <url>, sans options)
 ```bash
-# Ajouter le dépôt (syntaxe: add-repo <nom> <url>, sans options)
 sudo eopkg add-repo linuxon http://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
-
-# Vérifier
+```
+#### Vérifier
+```bash
 sudo eopkg list-repo
-
-# Installer un paquet
+```
+#### Installer un paquet
+```bash
 sudo eopkg install btrfsmgr
 sudo eopkg install btrfsmgr-gui
 sudo eopkg install deb-to-eopkg
+```
 
-# Retirer le dépôt
+#### Retirer le dépôt
+```bash
 sudo eopkg remove-repo linuxon
+```
 
-# Vider le cache (après une mise à jour des .eopkg)
+#### Vider le cache (après une mise à jour des .eopkg)
+```bash
 sudo eopkg delete-cache
 ```
 
