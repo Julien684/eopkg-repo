@@ -14,31 +14,31 @@
             <Name>btrfsmgr-gui</Name>
             <Summary xml:lang="en"><![CDATA[BTRFS snapshot manager GUI - create, list, restore, and automate BTRFS subvolume snapshots]]></Summary>
             <Summary xml:lang="fr"><![CDATA[Gestionnaire d'instantanés BTRFS en interface graphique — créer, lister, restaurer et automatiser les instantanés de sous-volumes BTRFS]]></Summary>
-            <Description xml:lang="en"><![CDATA[btrfsmgr-gui is a GTK3 graphical tool for managing BTRFS subvolume snapshots on Linux.
+            <Description xml:lang="en"><![CDATA[btrfsmgr-gui is a GTK4 graphical tool for managing BTRFS subvolume snapshots on Linux.
 It supports creating, listing, restoring, and deleting snapshots; scheduling
 automatic snapshots via systemd timers with a retention policy; and generating
 boot entries (GRUB / systemd-boot) so you can boot directly into a snapshot.
 Restore is a CoW swap (two renames) - no data is copied.
 It reuses the business logic of btrfsmgr (TUI).
-Requires btrfs-progs, GTK3 / PyGObject and Python 3.8+.
+Requires btrfs-progs, GTK4 / PyGObject and Python 3.8+.
 Unofficial; not affiliated with Solus or the BTRFS project.]]></Description>
-            <Description xml:lang="fr"><![CDATA[btrfsmgr-gui est une interface graphique (GTK3) de gestion des instantanés de
+            <Description xml:lang="fr"><![CDATA[btrfsmgr-gui est une interface graphique (GTK4) de gestion des instantanés de
 sous-volumes BTRFS sous Linux. Elle permet de créer, lister, restaurer et
 supprimer des instantanés ; de planifier des instantanés automatiques via des
 timers systemd avec une politique de rétention ; et de générer des entrées de
 démarrage (GRUB / systemd-boot) pour booter directement sur un instantané. La
 restauration est un échange CoW (deux renommages) — aucune donnée n'est copiée.
-Réutilise la logique métier de btrfsmgr (TUI). Nécessite btrfs-progs, GTK3 /
+Réutilise la logique métier de btrfsmgr (TUI). Nécessite btrfs-progs, GTK4 /
 PyGObject et Python 3.8+. Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Description>
             <PartOf>system.utilities</PartOf>
             <License>GPL-3.0-or-later</License>
             <RuntimeDependencies>
             </RuntimeDependencies>
             <History>
-                <Update release="1">
-                    <Date>2026-10-09</Date>
-                    <Version>1.1.2</Version>
-                    <Comment><![CDATA[btrfsmgr-gui 1.1.2 initial package]]></Comment>
+                <Update release="2">
+                    <Date>2026-10-15</Date>
+                    <Version>1.1.3</Version>
+                    <Comment><![CDATA[btrfsmgr-gui 1.1.3]]></Comment>
                     <Name><![CDATA[Julien]]></Name>
                     <Email>julien_solus@use.startmail.com</Email>
                 </Update>
@@ -47,10 +47,10 @@ PyGObject et Python 3.8+. Non officiel ; non affilié à Solus ni au projet BTRF
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>203987</InstalledSize>
-            <PackageSize>54022</PackageSize>
-            <PackageHash>b5feb44c0a182868aedab22f7ec0d509e61aa6ef</PackageHash>
-            <PackageURI>b/btrfsmgr-gui/btrfsmgr-gui-1.1.2-1-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>214511</InstalledSize>
+            <PackageSize>56292</PackageSize>
+            <PackageHash>1c9c300767fd30606d147bed129283746f7948eb</PackageHash>
+            <PackageURI>b/btrfsmgr-gui/btrfsmgr-gui-1.1.3-2-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>btrfsmgr-gui</Name>
