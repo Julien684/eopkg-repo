@@ -85,10 +85,10 @@ tierce). Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Descriptio
             <RuntimeDependencies>
             </RuntimeDependencies>
             <History>
-                <Update release="1">
-                    <Date>2026-10-11</Date>
-                    <Version>1.0.12</Version>
-                    <Comment><![CDATA[btrfsmgr 1.0.12 initial package]]></Comment>
+                <Update release="2">
+                    <Date>2026-10-15</Date>
+                    <Version>1.0.13</Version>
+                    <Comment><![CDATA[btrfsmgr 1.0.13 initial package]]></Comment>
                     <Name><![CDATA[Julien]]></Name>
                     <Email>julien_solus@use.startmail.com</Email>
                 </Update>
@@ -97,10 +97,10 @@ tierce). Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Descriptio
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>173092</InstalledSize>
-            <PackageSize>47252</PackageSize>
-            <PackageHash>1bdd944cdc67bb3fd2d376a11b06af20a982faa4</PackageHash>
-            <PackageURI>b/btrfsmgr/btrfsmgr-1.0.12-1-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>180738</InstalledSize>
+            <PackageSize>48999</PackageSize>
+            <PackageHash>cc2829390c0bf8c051868bb1c765612ef8acdf19</PackageHash>
+            <PackageURI>b/btrfsmgr/btrfsmgr-1.0.13-2-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>btrfsmgr</Name>

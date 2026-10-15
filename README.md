@@ -73,7 +73,7 @@ eopkg-repo/
 ├── eopkg-index.xml.xz.sha256sum
 ├── b/
 │   ├── btrfsmgr/
-│   │   └── btrfsmgr-1.0.12-1-1-x86_64.eopkg
+│   │   └── btrfsmgr-1.0.13-2-1-x86_64.eopkg
 │   └── btrfsmgr-gui/
 │       └── btrfsmgr-gui-1.1.2-1-1-x86_64.eopkg
 └── d/
