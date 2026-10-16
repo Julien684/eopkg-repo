@@ -23,7 +23,7 @@ Le CDN Solus officiel (`cdn.getsol.us`) utilise aussi le **hash brut seul** :
 URL publique :
 
 ```
-http://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
+https://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
 ```
 
 > Le domaine `depoa.julien68.fr` redirige automatiquement vers le reverse
@@ -33,7 +33,7 @@ http://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
 
 #### Ajouter le dépôt (syntaxe: add-repo <nom> <url>, sans options)
 ```bash
-sudo eopkg add-repo linuxon http://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
+sudo eopkg add-repo linuxon https://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
 ```
 #### Vérifier
 ```bash
@@ -114,6 +114,6 @@ Après avoir déposé un nouveau `.eopkg` dans le bon sous-dossier
 
 | Paquet         | Gitea                                                        |
 |----------------|--------------------------------------------------------------|
-| btrfsmgr       | http://depoa.julien68.fr/Linuxon/btrfsmgr                    |
-| btrfsmgr-gui   | http://depoa.julien68.fr/Linuxon/btrfsmgr-gui                |
-| deb-to-eopkg   | http://depoa.julien68.fr/Linuxon/deb-to-eopkg                |
+| btrfsmgr       | https://depoa.julien68.fr/Linuxon/btrfsmgr |
+| btrfsmgr-gui   | https://depoa.julien68.fr/Linuxon/btrfsmgr-gui |
+| deb-to-eopkg   | https://depoa.julien68.fr/Linuxon/deb-to-eopkg |
