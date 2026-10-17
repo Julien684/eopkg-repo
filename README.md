@@ -23,17 +23,17 @@ Le CDN Solus officiel (`cdn.getsol.us`) utilise aussi le **hash brut seul** :
 URL publique :
 
 ```
-https://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
+https://raw.githubusercontent.com/Julien684/eopkg-repo/main/eopkg-index.xml
 ```
 
-> Le domaine `depoa.julien68.fr` redirige automatiquement vers le reverse
-> proxy Gitea (HTTP → HTTPS), aucun port à préciser.
+> Les fichiers bruts (index et `.eopkg`) sont servis par
+> `raw.githubusercontent.com`, sans authentification.
 
 ### Commandes (eopkg 5.0)
 
 #### Ajouter le dépôt (syntaxe: add-repo <nom> <url>, sans options)
 ```bash
-sudo eopkg add-repo linuxon https://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
+sudo eopkg add-repo linuxon https://raw.githubusercontent.com/Julien684/eopkg-repo/main/eopkg-index.xml
 ```
 #### Vérifier
 ```bash
@@ -112,8 +112,8 @@ Après avoir déposé un nouveau `.eopkg` dans le bon sous-dossier
 
 ## Projets sources
 
-| Paquet         | Gitea                                                        |
-|----------------|--------------------------------------------------------------|
-| btrfsmgr       | https://depoa.julien68.fr/Linuxon/btrfsmgr |
-| btrfsmgr-gui   | https://depoa.julien68.fr/Linuxon/btrfsmgr-gui |
-| deb-to-eopkg   | https://depoa.julien68.fr/Linuxon/deb-to-eopkg |
+| Paquet         | GitHub                                                           |
+|----------------|------------------------------------------------------------------|
+| btrfsmgr       | https://github.com/Julien684/btrfsmgr |
+| btrfsmgr-gui   | https://github.com/Julien684/btrfsmgr-gui |
+| deb-to-eopkg   | https://github.com/Julien684/deb-to-eopkg |
