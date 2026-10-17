@@ -157,9 +157,9 @@ tierce). Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Descriptio
             <RuntimeDependencies>
             </RuntimeDependencies>
             <History>
-                <Update release="11">
+                <Update release="12">
                     <Date>2026-10-12</Date>
-                    <Version>2.7.3</Version>
+                    <Version>2.7.4</Version>
                     <Comment><![CDATA[Rust rewrite of the conversion tool.]]></Comment>
                     <Name><![CDATA[Julien]]></Name>
                     <Email>julien@example.com</Email>
@@ -169,10 +169,10 @@ tierce). Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Descriptio
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>1392456</InstalledSize>
-            <PackageSize>540253</PackageSize>
-            <PackageHash>f58a38b02fd50ab4d09dc32867e112ea60bf5550</PackageHash>
-            <PackageURI>d/deb-to-eopkg/deb-to-eopkg-2.7.3-11-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>1392070</InstalledSize>
+            <PackageSize>540196</PackageSize>
+            <PackageHash>efd775094421f38870f5421ea59d303335e44914</PackageHash>
+            <PackageURI>d/deb-to-eopkg/deb-to-eopkg-2.7.4-12-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>deb-to-eopkg</Name>
