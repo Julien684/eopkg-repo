@@ -183,4 +183,48 @@ tierce). Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Descriptio
                 </Packager>
             </Source>
         </Package>
+        <Package>
+            <Name>solus-external-kernel-manager</Name>
+            <Summary xml:lang="en"><![CDATA[Graphical Qt6 manager to install and manage external Linux kernels (CachyOS, Zen, Liquorix) on Solus]]></Summary>
+            <Summary xml:lang="fr"><![CDATA[Gestionnaire graphique Qt6 pour installer et gérer des noyaux Linux externes (CachyOS, Zen, Liquorix) sur Solus]]></Summary>
+            <Description xml:lang="en"><![CDATA[Solus External Kernel Manager is a small graphical manager (Qt6, written in Rust) that installs and manages external Linux kernels on a Solus distribution. Three providers are supported, one per tab: CachyOS kernels (mirror.cachyos.org), the Arch linux-zen kernel (extra repo) and the Liquorix linux-lqx kernel (liquorix.net). It reads the repository database, downloads the .pkg.tar.zst with SHA256 verification, discovers the real modules directory and vmlinuz from the archive, installs (modules + depmod, ESP copy, dracut initrd, systemd-boot entry) and can set the default boot kernel. The running kernel is protected against removal. CLI: --fetch-test, --install <kind>, --list. Requires Qt6 Base, dracut and systemd-boot (or clr-boot-manager) with the ESP mounted at /boot. Unofficial; not affiliated with Solus, CachyOS, Zen or Liquorix.]]></Description>
+            <Description xml:lang="fr"><![CDATA[Solus External Kernel Manager est un petit gestionnaire graphique (Qt6, écrit en Rust) qui installe et gère des noyaux Linux externes sur une distribution Solus. Trois fournisseurs sont pris en charge, un par onglet : les noyaux CachyOS (mirror.cachyos.org), le noyau linux-zen d'Arch (dépôt extra) et le noyau linux-lqx Liquorix (liquorix.net). Il lit la base du dépôt, télécharge le .pkg.tar.zst en vérifiant le SHA256, découvre le dossier de modules et le vmlinuz réels dans l'archive, installe (modules + depmod, copie sur l'ESP, initrd dracut, entrée systemd-boot) et peut choisir le noyau de démarrage par défaut. Le noyau en cours d'utilisation est protégé contre la suppression. Ligne de commande : --fetch-test, --install <kind>, --list. Nécessite Qt6 Base, dracut et systemd-boot (ou clr-boot-manager) avec l'ESP monté en /boot. Non officiel ; non affilié à Solus, CachyOS, Zen ni Liquorix.]]></Description>
+            <PartOf>system.utilities</PartOf>
+            <License>GPL-3.0-or-later</License>
+            <RuntimeDependencies>
+            </RuntimeDependencies>
+            <History>
+                <Update release="2">
+                    <Date>2026-10-27</Date>
+                    <Version>0.1.1</Version>
+                    <Comment><![CDATA[solus-external-kernel-manager 0.1.1 rel2 : option CLI --list, actions par onglet]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Update>
+                <Update release="1">
+                    <Date>2026-10-26</Date>
+                    <Version>0.1.1</Version>
+                    <Comment><![CDATA[solus-external-kernel-manager 0.1.1 : fix Zen listing/removal (registry + modern module names), per-tab actions]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Update>
+            </History>
+            <BuildHost>solus-local</BuildHost>
+            <Distribution>Solus</Distribution>
+            <DistributionRelease>1</DistributionRelease>
+            <Architecture>x86_64</Architecture>
+            <InstalledSize>3767898</InstalledSize>
+            <PackageSize>1381594</PackageSize>
+            <PackageHash>40f0ae6ca31619d0341a63523799c71e7d19a912</PackageHash>
+            <PackageURI>s/solus-external-kernel-manager/solus-external-kernel-manager-0.1.1-2-1-x86_64.eopkg</PackageURI>
+            <PackageFormat>1.2</PackageFormat>
+            <Source>
+                <Name>solus-external-kernel-manager</Name>
+                <Homepage>https://github.com/Julien684/solus-external-kernel-manager</Homepage>
+                <Packager>
+                    <Name>Julien</Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Packager>
+            </Source>
+        </Package>
     </PISI>

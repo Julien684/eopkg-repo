@@ -1,7 +1,7 @@
 # eopkg-repo — Linuxon / Solus EOPKG Repository
 
-Repository EOPKG personnel pour les paquets Solus `btrfsmgr`, `btrfsmgr-gui`
-et `deb-to-eopkg`.
+Repository EOPKG personnel pour les paquets Solus `btrfsmgr`, `btrfsmgr-gui`,
+`deb-to-eopkg` et `solus-external-kernel-manager`.
 
 > **Testé de bout-en-bout sur Solus 4.9 (eopkg 5.0.0)** :
 > `eopkg add-repo` + `eopkg install btrfsmgr` fonctionnent.
@@ -44,6 +44,7 @@ sudo eopkg list-repo
 sudo eopkg install btrfsmgr
 sudo eopkg install btrfsmgr-gui
 sudo eopkg install deb-to-eopkg
+sudo eopkg install solus-external-kernel-manager
 ```
 
 #### Retirer le dépôt
@@ -79,6 +80,9 @@ eopkg-repo/
 └── d/
     └── deb-to-eopkg/
         └── deb-to-eopkg-2.2.0-1-1-x86_64.eopkg
+└── s/
+    └── solus-external-kernel-manager/
+        └── solus-external-kernel-manager-0.1.1-2-1-x86_64.eopkg
 ```
 
 Le chemin `<lettre>/<nom-paquet>/<fichier>.eopkg` suit la convention du CDN
@@ -117,3 +121,4 @@ Après avoir déposé un nouveau `.eopkg` dans le bon sous-dossier
 | btrfsmgr       | https://github.com/Julien684/btrfsmgr |
 | btrfsmgr-gui   | https://github.com/Julien684/btrfsmgr-gui |
 | deb-to-eopkg   | https://github.com/Julien684/deb-to-eopkg |
+| solus-external-kernel-manager | https://github.com/Julien684/solus-external-kernel-manager |
