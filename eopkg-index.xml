@@ -194,6 +194,13 @@ tierce). Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Descriptio
             <RuntimeDependencies>
             </RuntimeDependencies>
             <History>
+                <Update release="3">
+                    <Date>2026-10-28</Date>
+                    <Version>0.1.1</Version>
+                    <Comment><![CDATA[solus-external-kernel-manager 0.1.1 rel3 : jauge espace libre /boot (total + libre), logo Tux + cle a molette (icone fenetre + theme hicolor), tests unitaires statfs/fmt_bytes]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Update>
                 <Update release="2">
                     <Date>2026-10-27</Date>
                     <Version>0.1.1</Version>
@@ -213,10 +220,10 @@ tierce). Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Descriptio
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>3767898</InstalledSize>
-            <PackageSize>1381589</PackageSize>
-            <PackageHash>aa1879423acd8ef1a4bf3d39206eb816d373fa3b</PackageHash>
-            <PackageURI>s/solus-external-kernel-manager/solus-external-kernel-manager-0.1.1-2-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>3785312</InstalledSize>
+            <PackageSize>1395692</PackageSize>
+            <PackageHash>2b925397c8de61981251b3ce53f2d616935ebc2b</PackageHash>
+            <PackageURI>s/solus-external-kernel-manager/solus-external-kernel-manager-0.1.1-3-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>solus-external-kernel-manager</Name>
