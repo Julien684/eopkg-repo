@@ -184,6 +184,55 @@ tierce). Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Descriptio
             </Source>
         </Package>
         <Package>
+            <Name>ollama-manager-qt</Name>
+            <Summary xml:lang="en"><![CDATA[Graphical Qt6 manager for Ollama - download, update and remove models]]></Summary>
+            <Summary xml:lang="fr"><![CDATA[Gestionnaire graphique (Qt6) d'Ollama — télécharger, mettre à jour et supprimer des modèles]]></Summary>
+            <Description xml:lang="en"><![CDATA[ollama-manager-qt is a small graphical Qt6 manager, written in Rust
+(via qtrs), for administering an Ollama server: model download with a live
+progress bar, updating one model or all of them, removal with confirmation,
+and a table of local models (name, size, parameters, date, capabilities).
+The server address is configurable at startup and persisted in QSettings.
+Single binary (~3 MB) with no runtime dependency beyond qt6-base
+(system-provided). Unofficial.]]></Description>
+            <Description xml:lang="fr"><![CDATA[ollama-manager-qt est un petit gestionnaire graphique (Qt6), écrit en
+Rust, pour administrer un serveur Ollama : téléchargement de modèles avec
+barre de progression en direct, mise à jour d'un modèle ou de tous les
+modèles, suppression avec confirmation, et liste des modèles locaux (nom,
+taille, paramètres, date, capacités). L'adresse du serveur est configurable
+au lancement et persistée dans QSettings. Binaire unique (~3 Mo) sans
+dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]></Description>
+            <PartOf>network.utilities</PartOf>
+            <License>GPL-3.0-or-later</License>
+            <RuntimeDependencies>
+            </RuntimeDependencies>
+            <History>
+                <Update release="1">
+                    <Date>2026-10-31</Date>
+                    <Version>0.1.0</Version>
+                    <Comment><![CDATA[ollama-manager-qt 0.1.0]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Update>
+            </History>
+            <BuildHost>solus-local</BuildHost>
+            <Distribution>Solus</Distribution>
+            <DistributionRelease>1</DistributionRelease>
+            <Architecture>x86_64</Architecture>
+            <InstalledSize>2990551</InstalledSize>
+            <PackageSize>1122977</PackageSize>
+            <PackageHash>029c69f06208d08e5d8319ec2d9c3d33442b9eb0</PackageHash>
+            <PackageURI>o/ollama-manager-qt/ollama-manager-qt-0.1.0-1-1-x86_64.eopkg</PackageURI>
+            <PackageFormat>1.2</PackageFormat>
+            <Source>
+                <Name>ollama-manager-qt</Name>
+                <Homepage>https://depoa.julien68.fr/Linuxon/ollama-manager-qt</Homepage>
+                <Packager>
+                    <Name>Julien</Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Packager>
+            </Source>
+        </Package>
+        <Package>
             <Name>solus-external-kernel-manager</Name>
             <Summary xml:lang="en"><![CDATA[Graphical Qt6 manager to install and manage external Linux kernels (CachyOS, Zen, Liquorix) on Solus]]></Summary>
             <Summary xml:lang="fr"><![CDATA[Gestionnaire graphique Qt6 pour installer et gérer des noyaux Linux externes (CachyOS, Zen, Liquorix) sur Solus]]></Summary>
