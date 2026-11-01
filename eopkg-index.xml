@@ -199,14 +199,21 @@ Rust, pour administrer un serveur Ollama : téléchargement de modèles avec
 barre de progression en direct, mise à jour d'un modèle ou de tous les
 modèles, suppression avec confirmation, et liste des modèles locaux (nom,
 taille, paramètres, date, capacités). L'adresse du serveur est configurable
-au lancement et persistée dans QSettings. Binaire unique (~3 Mo) sans
+au lancement et persistée dans ~/.config/OllamaManager/ollama-manager-qt.ini (INI). Binaire unique (~3 Mo) sans
 dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]></Description>
             <PartOf>network.utilities</PartOf>
             <License>GPL-3.0-or-later</License>
             <RuntimeDependencies>
             </RuntimeDependencies>
             <History>
-                <Update release="1">
+                                <Update release="2">
+                    <Date>2026-11-01</Date>
+                    <Version>0.1.0</Version>
+                    <Comment><![CDATA[Correctifs SIGSEGV fermeture, timer de pompage, libellé champ serveur, champ de téléchargement rendu visible, icône application (logo Ollama + clé à molette), persistance config INI]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Update>
+<Update release="1">
                     <Date>2026-10-31</Date>
                     <Version>0.1.0</Version>
                     <Comment><![CDATA[ollama-manager-qt 0.1.0]]></Comment>
@@ -218,10 +225,10 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>2998735</InstalledSize>
-            <PackageSize>1126192</PackageSize>
-            <PackageHash>3d95e122c47b5c40a7461bc1e959e057591935b0</PackageHash>
-            <PackageURI>o/ollama-manager-qt/ollama-manager-qt-0.1.0-1-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>3044298</InstalledSize>
+            <PackageSize>1172107</PackageSize>
+            <PackageHash>44aee6a59836d5006c81cf186d086a2d19da011a</PackageHash>
+            <PackageURI>o/ollama-manager-qt/ollama-manager-qt-0.1.0-2-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>ollama-manager-qt</Name>
