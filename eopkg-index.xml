@@ -206,7 +206,14 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
             <RuntimeDependencies>
             </RuntimeDependencies>
             <History>
-                                                                                                <Update release="6">
+                                                                                                                <Update release="7">
+                    <Date>2026-11-01</Date>
+                    <Version>0.1.0</Version>
+                    <Comment><![CDATA[Barre de progression centree verticalement dans sa case]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Update>
+<Update release="6">
                     <Date>2026-11-01</Date>
                     <Version>0.1.0</Version>
                     <Comment><![CDATA[Correction suppression de modele (double emprunt pendant le dialogue modal, QMessageBox dans la pompe du timer), resultat dans la barre de statut]]></Comment>
@@ -253,10 +260,10 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>3061106</InstalledSize>
-            <PackageSize>1163530</PackageSize>
-            <PackageHash>75b31019f832caf653d14ddf66e37cb4822a88ae</PackageHash>
-            <PackageURI>o/ollama-manager-qt/ollama-manager-qt-0.1.0-6-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>3062282</InstalledSize>
+            <PackageSize>1164176</PackageSize>
+            <PackageHash>0fa8127c185ef0087b1101c87d636a490e562810</PackageHash>
+            <PackageURI>o/ollama-manager-qt/ollama-manager-qt-0.1.0-7-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>ollama-manager-qt</Name>
