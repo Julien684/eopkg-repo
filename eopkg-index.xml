@@ -318,10 +318,10 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>3069964</InstalledSize>
-            <PackageSize>1166816</PackageSize>
-            <PackageHash>ce1edca1c976f2c9b11140d19cbd299926c08461</PackageHash>
-            <PackageURI>o/ollama-manager-qt/ollama-manager-qt-0.1.0-11-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>3170830</InstalledSize>
+            <PackageSize>1265898</PackageSize>
+            <PackageHash>e5bab739dac5864e1591312d20d7e202096be06f</PackageHash>
+            <PackageURI>o/ollama-manager-qt/ollama-manager-qt-0.1.0-12-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>ollama-manager-qt</Name>
