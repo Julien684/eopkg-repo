@@ -206,7 +206,14 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
             <RuntimeDependencies>
             </RuntimeDependencies>
             <History>
-                                                <Update release="3">
+                                                                <Update release="4">
+                    <Date>2026-11-01</Date>
+                    <Version>0.1.0</Version>
+                    <Comment><![CDATA[Icone resolue par le menu (pixmaps + Icon= absolu + set_icon/set_desktop_file_name), zone progression/logs compacte]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Update>
+<Update release="3">
                     <Date>2026-11-01</Date>
                     <Version>0.1.0</Version>
                     <Comment><![CDATA[Champ de telechargement reellement visible (GridLayout : libelle + champ + bouton), icone lama blanc avec cle a molette]]></Comment>
@@ -232,10 +239,10 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>3038977</InstalledSize>
-            <PackageSize>1161529</PackageSize>
-            <PackageHash>4dfe0bed6a23fb2acf5c033c79858d360810c0e9</PackageHash>
-            <PackageURI>o/ollama-manager-qt/ollama-manager-qt-0.1.0-3-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>3058818</InstalledSize>
+            <PackageSize>1162370</PackageSize>
+            <PackageHash>a966318c3dfcb2ecb24cb3ab66fa0fae02ad28fa</PackageHash>
+            <PackageURI>o/ollama-manager-qt/ollama-manager-qt-0.1.0-4-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>ollama-manager-qt</Name>
