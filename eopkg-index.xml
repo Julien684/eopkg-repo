@@ -215,8 +215,8 @@ Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Description>
         </Package>
         <Package>
             <Name>ollama-manager-qt</Name>
-            <Summary xml:lang="en"><![CDATA[Graphical Qt6 manager for Ollama - download, update and remove models]]></Summary>
-            <Summary xml:lang="fr"><![CDATA[Gestionnaire graphique (Qt6) d'Ollama — télécharger, mettre à jour et supprimer des modèles]]></Summary>
+            <Summary xml:lang="en"><![CDATA[Ollama Model Manager - graphical Qt6 manager for Ollama: download, update and remove models]]></Summary>
+            <Summary xml:lang="fr"><![CDATA[Ollama Model Manager — gestionnaire graphique (Qt6) d'Ollama : télécharger, mettre à jour et supprimer des modèles]]></Summary>
             <Description xml:lang="en"><![CDATA[ollama-manager-qt is a small graphical Qt6 manager, written in Rust
 (via qtrs), for administering an Ollama server: model download with a live
 progress bar, updating one model or all of them, removal with confirmation,
@@ -235,7 +235,14 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
             <License>GPL-3.0-or-later</License>
             <RuntimeDependencies>
             </RuntimeDependencies>
-            <History>
+                        <History>
+                <Update release="11">
+                    <Date>2026-11-01</Date>
+                    <Version>0.1.0</Version>
+                    <Comment><![CDATA[Renommage en « Ollama Model Manager » (titre de fenetre et entree de menu)]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Update>
                                                                                                                                                                 <Update release="10">
                     <Date>2026-11-01</Date>
                     <Version>0.1.0</Version>
@@ -311,10 +318,10 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>3067458</InstalledSize>
-            <PackageSize>1166133</PackageSize>
-            <PackageHash>7533b632395f81e44e38bd712d5c0958bcd5ecaf</PackageHash>
-            <PackageURI>o/ollama-manager-qt/ollama-manager-qt-0.1.0-10-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>3069964</InstalledSize>
+            <PackageSize>1166816</PackageSize>
+            <PackageHash>ce1edca1c976f2c9b11140d19cbd299926c08461</PackageHash>
+            <PackageURI>o/ollama-manager-qt/ollama-manager-qt-0.1.0-11-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>ollama-manager-qt</Name>
