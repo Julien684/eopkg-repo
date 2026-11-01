@@ -206,7 +206,14 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
             <RuntimeDependencies>
             </RuntimeDependencies>
             <History>
-                                                                                                                <Update release="7">
+                                                                                                                                <Update release="8">
+                    <Date>2026-11-01</Date>
+                    <Version>0.1.0</Version>
+                    <Comment><![CDATA[Dialogue de confirmation corrige (Oui / Annuler ; Ok=0x400 annulait la suppression), barre de progression pleine largeur, logs pleine largeur]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Update>
+<Update release="7">
                     <Date>2026-11-01</Date>
                     <Version>0.1.0</Version>
                     <Comment><![CDATA[Barre de progression centree verticalement dans sa case]]></Comment>
@@ -261,9 +268,9 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
             <InstalledSize>3062282</InstalledSize>
-            <PackageSize>1164176</PackageSize>
-            <PackageHash>0fa8127c185ef0087b1101c87d636a490e562810</PackageHash>
-            <PackageURI>o/ollama-manager-qt/ollama-manager-qt-0.1.0-7-1-x86_64.eopkg</PackageURI>
+            <PackageSize>1163834</PackageSize>
+            <PackageHash>1da3fec77e6a7af17f8966ee8e347d6e4a5af671</PackageHash>
+            <PackageURI>o/ollama-manager-qt/ollama-manager-qt-0.1.0-8-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>ollama-manager-qt</Name>
