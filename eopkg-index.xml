@@ -371,6 +371,13 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
             <RuntimeDependencies>
             </RuntimeDependencies>
             <History>
+                <Update release="6">
+                    <Date>2026-11-05</Date>
+                    <Version>0.1.1</Version>
+                    <Comment><![CDATA[solus-external-kernel-manager 0.1.1 rel6 : jauge /boot epaissie et inversee (remplissage = espace utilise)]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Update>
                 <Update release="5">
                     <Date>2026-11-05</Date>
                     <Version>0.1.1</Version>
@@ -404,10 +411,10 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>3817785</InstalledSize>
-            <PackageSize>1406888</PackageSize>
-            <PackageHash>5468bb123aacb68b8d92be808993338757b83acb</PackageHash>
-            <PackageURI>s/solus-external-kernel-manager/solus-external-kernel-manager-0.1.1-5-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>3818065</InstalledSize>
+            <PackageSize>1406807</PackageSize>
+            <PackageHash>a86dbe7da43d8a0459267cbe9499dc22fa94d006</PackageHash>
+            <PackageURI>s/solus-external-kernel-manager/solus-external-kernel-manager-0.1.1-6-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>solus-external-kernel-manager</Name>
