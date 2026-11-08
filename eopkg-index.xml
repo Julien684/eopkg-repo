@@ -11,6 +11,59 @@
             </Obsoletes>
         </Distribution>
         <Package>
+            <Name>amv-converter</Name>
+            <Summary xml:lang="en"><![CDATA[Graphical Qt6 converter for videos to the AMV format, for small MP3/video players]]></Summary>
+            <Summary xml:lang="fr"><![CDATA[Convertisseur graphique (Qt6) de vidéos au format AMV pour petits lecteurs MP3/vidéo]]></Summary>
+            <Description xml:lang="en"><![CDATA[amv-converter is a small graphical Qt6 tool that batch-converts videos
+to the AMV format for cheap MP3/video players (160x120, 128x96,
+176x144, 160x128). Add files or a whole folder, pick the quality and
+the resolution, then convert everything in sequence. The French audio
+track is selected automatically when present in the source. The AMV
+format is a RIFF/AMV/AVI hybrid that ffmpeg encodes natively (amv +
+adpcm_ima_amv codecs). Automatic letterboxing preserves the image
+aspect ratio. Requires ffmpeg and ffprobe in the PATH.]]></Description>
+            <Description xml:lang="fr"><![CDATA[amv-converter est un petit convertisseur graphique (Qt6) qui
+transforme des vidéos au format AMV pour les petits lecteurs MP3/vidéo
+bon marché (160x120, 128x96, 176x144, 160x128). L'application est
+orientée par lots : on ajoute des fichiers ou un dossier entier, on
+choisit la qualite et la resolution, puis tout est converti a la suite.
+L'audio francais est selectionne automatiquement s'il est present dans
+la source. Le format AMV est un hybride RIFF/AMV/AVI que ffmpeg encode
+nativement (codecs amv + adpcm_ima_amv). Le letterbox automatique
+preserve le ratio de l'image. Necessite ffmpeg et ffprobe dans le PATH.]]></Description>
+            <PartOf>audio.video</PartOf>
+            <License>GPL-3.0-or-later</License>
+            <RuntimeDependencies>
+
+            </RuntimeDependencies>
+            <History>
+                <Update release="1">
+                    <Date>2026-11-08</Date>
+                    <Version>0.1.0</Version>
+                    <Comment><![CDATA[amv-converter 0.1.0 : premier paquet (GUI Qt6, conversion par lots vers AMV)]]></Comment>
+                    <Name><![CDATA[Julien]]></Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Update>
+            </History>
+            <BuildHost>solus-local</BuildHost>
+            <Distribution>Solus</Distribution>
+            <DistributionRelease>1</DistributionRelease>
+            <Architecture>x86_64</Architecture>
+            <InstalledSize>996947</InstalledSize>
+            <PackageSize>299784</PackageSize>
+            <PackageHash>c5c30770d12eca6a4b2ce376d29577d0d1542a50</PackageHash>
+            <PackageURI>a/amv-converter/amv-converter-0.1.0-1-1-x86_64.eopkg</PackageURI>
+            <PackageFormat>1.2</PackageFormat>
+            <Source>
+                <Name>amv-converter</Name>
+                <Homepage>https://depoa.julien68.fr/Linuxon/amv-converter</Homepage>
+                <Packager>
+                    <Name>Julien</Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Packager>
+            </Source>
+        </Package>
+        <Package>
             <Name>btrfsmgr-gui</Name>
             <Summary xml:lang="en"><![CDATA[BTRFS snapshot manager GUI - create, list, restore, and automate BTRFS subvolume snapshots]]></Summary>
             <Summary xml:lang="fr"><![CDATA[Gestionnaire d'instantanés BTRFS en interface graphique — créer, lister, restaurer et automatiser les instantanés de sous-volumes BTRFS]]></Summary>
