@@ -1,8 +1,7 @@
 # eopkg-repo — Linuxon / Solus EOPKG Repository
 
-Repository EOPKG personnel pour les paquets Solus `amv-converter`, `btrfsmgr`,
-`btrfsmgr-gui`, `deb-to-eopkg`, `ollama-manager-qt` et
-`solus-external-kernel-manager`.
+Repository EOPKG personnel pour les paquets Solus `btrfsmgr`, `btrfsmgr-gui`,
+`deb-to-eopkg`, `ollama-manager-qt` et `solus-external-kernel-manager`.
 
 > **Testé de bout-en-bout sur Solus 4.9 (eopkg 5.0.0)** :
 > `eopkg add-repo` + `eopkg install btrfsmgr` fonctionnent.
@@ -43,11 +42,6 @@ sudo eopkg list-repo
 #### Installer un paquet
 
 Un bloc par paquet ; chaque lien mène à la page du projet.
-
-**[amv-converter](https://depoa.julien68.fr/Linuxon/amv-converter)** — convertit une vidéo en AMV pour petits lecteurs MP3/vidéo
-```bash
-sudo eopkg install amv-converter
-```
 
 **[btrfsmgr](https://github.com/Julien684/btrfsmgr)** — gestionnaire Btrfs (CLI)
 ```bash
@@ -145,7 +139,6 @@ Après avoir déposé un nouveau `.eopkg` dans le bon sous-dossier
 
 | Paquet         | Page projet                                                      |
 |----------------|------------------------------------------------------------------|
-| amv-converter  | https://depoa.julien68.fr/Linuxon/amv-converter |
 | btrfsmgr       | https://github.com/Julien684/btrfsmgr |
 | btrfsmgr-gui   | https://github.com/Julien684/btrfsmgr-gui |
 | deb-to-eopkg   | https://github.com/Julien684/deb-to-eopkg |
