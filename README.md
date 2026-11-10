@@ -54,7 +54,7 @@ sudo eopkg install amv-converter
 sudo eopkg install btrfsmgr
 ```
 
-**[btrfsmgr-gui](https://depoa.julien68.fr/Linuxon/btrfsmgr-gui)** — interface graphique de btrfsmgr (GTK4)
+**[btrfsmgr-gui](https://depoa.julien68.fr/Linuxon/btrfsmgr-gui)** — interface graphique de btrfsmgr (Qt6)
 ```bash
 sudo eopkg install btrfsmgr-gui
 ```
