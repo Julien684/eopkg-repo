@@ -11,6 +11,76 @@
             </Obsoletes>
         </Distribution>
         <Package>
+            <Name>amv-converter</Name>
+            <Summary xml:lang="en"><![CDATA[Graphical Qt6 converter for videos to the AMV format, for small MP3/video players]]></Summary>
+            <Summary xml:lang="fr"><![CDATA[Convertisseur graphique (Qt6) de vidéos au format AMV pour petits lecteurs MP3/vidéo]]></Summary>
+            <Description xml:lang="en"><![CDATA[amv-converter is a small graphical Qt6 tool that batch-converts videos
+        MV format for cheap MP3/video players (160x120, 128x96,
+         160x128). Add files or a whole folder, pick the quality and
+        lution, then convert everything in sequence. The French audio
+         selected automatically when present in the source. The AMV
+        s a RIFF/AMV/AVI hybrid that ffmpeg encodes natively (amv +
+        a_amv codecs). Automatic letterboxing preserves the image
+        atio. Requires ffmpeg and ffprobe in the PATH.]]></Description>
+            <Description xml:lang="fr"><![CDATA[amv-converter est un petit convertisseur graphique (Qt6) qui
+        me des vidéos au format AMV pour les petits lecteurs MP3/vidéo
+        hé (160x120, 128x96, 176x144, 160x128). L'application est
+         par lots : on ajoute des fichiers ou un dossier entier, on
+        la qualite et la resolution, puis tout est converti a la suite
+         barre de progression et le temps restant. Le decodage peut etre
+        u GPU (VAAPI, NVDEC, QSV) avec repli automatique sur le CPU ;
+        ur AMV reste sur le CPU, faute d'encodeur materiel. L'audio
+         est selectionne automatiquement s'il est present dans la source.
+        t AMV est un hybride RIFF/AMV/AVI que ffmpeg encode nativement
+        amv + adpcm_ima_amv). Le letterbox automatique preserve le ratio
+        ge. Necessite ffmpeg et ffprobe dans le PATH.]]></Description>
+            <PartOf>audio.video</PartOf>
+            <License>GPL-3.0-or-later</License>
+            <RuntimeDependencies>
+
+            </RuntimeDependencies>
+            <History>
+            <Update release="3">
+                <Date>2026-11-10</Date>
+                <Version>0.2.0</Version>
+                <Comment>amv-converter 0.2.0 : capture d'ecran ajoutee au README (embarquee dans la documentation du paquet)</Comment>
+                <Name>Julien</Name>
+                <Email>julien_solus@use.startmail.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2026-11-10</Date>
+                <Version>0.2.0</Version>
+                <Comment>amv-converter 0.2.0 : barre de progression et temps restant repares, option de decodage GPU (VAAPI/NVDEC/QSV) avec repli CPU, icone d'application</Comment>
+                <Name>Julien</Name>
+                <Email>julien_solus@use.startmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2026-11-10</Date>
+                <Version>0.1.0</Version>
+                <Comment>amv-converter 0.1.0 : premier paquet (GUI Qt6, conversion par lots vers AMV)</Comment>
+                <Name>Julien</Name>
+                <Email>julien_solus@use.startmail.com</Email>
+            </Update>
+        </History>
+            <BuildHost>solus-local</BuildHost>
+            <Distribution>Solus</Distribution>
+            <DistributionRelease>1</DistributionRelease>
+            <Architecture>x86_64</Architecture>
+            <InstalledSize>1163242</InstalledSize>
+            <PackageSize>370275</PackageSize>
+            <PackageHash>28ac4e06e6ba4338c3404220dd2781d45cd929b9</PackageHash>
+            <PackageURI>a/amv-converter/amv-converter-0.2.0-3-1-x86_64.eopkg</PackageURI>
+            <PackageFormat>1.2</PackageFormat>
+            <Source>
+                <Name>amv-converter</Name>
+                <Homepage>https://github.com/Julien684/amv-converter</Homepage>
+                <Packager>
+                    <Name>Julien</Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Packager>
+            </Source>
+        </Package>
+        <Package>
             <Name>btrfsmgr-gui</Name>
             <Summary xml:lang="en"><![CDATA[BTRFS snapshot manager GUI - create, list, restore, and automate BTRFS subvolume snapshots]]></Summary>
             <Summary xml:lang="fr"><![CDATA[Gestionnaire d'instantanés BTRFS en interface graphique — créer, lister, restaurer et automatiser les instantanés de sous-volumes BTRFS]]></Summary>
