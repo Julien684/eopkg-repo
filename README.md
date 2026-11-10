@@ -1,7 +1,8 @@
 # eopkg-repo — Linuxon / Solus EOPKG Repository
 
-Repository EOPKG personnel pour les paquets Solus `btrfsmgr`, `btrfsmgr-gui`,
-`deb-to-eopkg` et `solus-external-kernel-manager`.
+Repository EOPKG personnel pour les paquets Solus `amv-converter`, `btrfsmgr`,
+`btrfsmgr-gui`, `deb-to-eopkg`, `ollama-manager-qt` et
+`solus-external-kernel-manager`.
 
 > **Testé de bout-en-bout sur Solus 4.9 (eopkg 5.0.0)** :
 > `eopkg add-repo` + `eopkg install btrfsmgr` fonctionnent.
@@ -40,10 +41,36 @@ sudo eopkg add-repo linuxon https://raw.githubusercontent.com/Julien684/eopkg-re
 sudo eopkg list-repo
 ```
 #### Installer un paquet
+
+Un bloc par paquet ; chaque lien mène à la page du projet.
+
+**[amv-converter](https://depoa.julien68.fr/Linuxon/amv-converter)** — convertit une vidéo en AMV pour petits lecteurs MP3/vidéo
+```bash
+sudo eopkg install amv-converter
+```
+
+**[btrfsmgr](https://github.com/Julien684/btrfsmgr)** — gestionnaire Btrfs (CLI)
 ```bash
 sudo eopkg install btrfsmgr
+```
+
+**[btrfsmgr-gui](https://github.com/Julien684/btrfsmgr-gui)** — interface graphique de btrfsmgr (GTK4)
+```bash
 sudo eopkg install btrfsmgr-gui
+```
+
+**[deb-to-eopkg](https://github.com/Julien684/deb-to-eopkg)** — convertit un paquet `.deb` en `.eopkg` (Rust)
+```bash
 sudo eopkg install deb-to-eopkg
+```
+
+**[ollama-manager-qt](https://github.com/Julien684/ollama-manager-qt)** — gestionnaire de modèles Ollama (Qt6)
+```bash
+sudo eopkg install ollama-manager-qt
+```
+
+**[solus-external-kernel-manager](https://github.com/Julien684/solus-external-kernel-manager)** — installe des noyaux CachyOS / Zen / Liquorix sur Solus (Qt6)
+```bash
 sudo eopkg install solus-external-kernel-manager
 ```
 
@@ -116,9 +143,11 @@ Après avoir déposé un nouveau `.eopkg` dans le bon sous-dossier
 
 ## Projets sources
 
-| Paquet         | GitHub                                                           |
+| Paquet         | Page projet                                                      |
 |----------------|------------------------------------------------------------------|
+| amv-converter  | https://depoa.julien68.fr/Linuxon/amv-converter |
 | btrfsmgr       | https://github.com/Julien684/btrfsmgr |
 | btrfsmgr-gui   | https://github.com/Julien684/btrfsmgr-gui |
 | deb-to-eopkg   | https://github.com/Julien684/deb-to-eopkg |
+| ollama-manager-qt | https://github.com/Julien684/ollama-manager-qt |
 | solus-external-kernel-manager | https://github.com/Julien684/solus-external-kernel-manager |
