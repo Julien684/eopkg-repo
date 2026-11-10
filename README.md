@@ -48,7 +48,7 @@ Un bloc par paquet ; chaque lien mène à la page du projet.
 sudo eopkg install btrfsmgr
 ```
 
-**[btrfsmgr-gui](https://github.com/Julien684/btrfsmgr-gui)** — interface graphique de btrfsmgr (GTK4)
+**[btrfsmgr-gui](https://github.com/Julien684/btrfsmgr-gui)** — interface graphique de btrfsmgr (Qt6)
 ```bash
 sudo eopkg install btrfsmgr-gui
 ```
