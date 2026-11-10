@@ -1,7 +1,8 @@
 # eopkg-repo — Linuxon / Solus EOPKG Repository
 
-Repository EOPKG personnel pour les paquets Solus `btrfsmgr`, `btrfsmgr-gui`,
-`deb-to-eopkg` et `solus-external-kernel-manager`.
+Repository EOPKG personnel pour les paquets Solus `amv-converter`, `btrfsmgr`,
+`btrfsmgr-gui`, `deb-to-eopkg`, `ollama-manager-qt` et
+`solus-external-kernel-manager`.
 
 > **Testé de bout-en-bout sur Solus 4.9 (eopkg 5.0.0)** :
 > `eopkg add-repo` + `eopkg install btrfsmgr` fonctionnent.
@@ -23,27 +24,53 @@ Le CDN Solus officiel (`cdn.getsol.us`) utilise aussi le **hash brut seul** :
 URL publique :
 
 ```
-https://raw.githubusercontent.com/Julien684/eopkg-repo/main/eopkg-index.xml
+https://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
 ```
 
 > Les fichiers bruts (index et `.eopkg`) sont servis par
-> `raw.githubusercontent.com`, sans authentification.
+> `depoa.julien68.fr/…/raw/branch/main/`, sans authentification.
 
 ### Commandes (eopkg 5.0)
 
 #### Ajouter le dépôt (syntaxe: add-repo <nom> <url>, sans options)
 ```bash
-sudo eopkg add-repo linuxon https://raw.githubusercontent.com/Julien684/eopkg-repo/main/eopkg-index.xml
+sudo eopkg add-repo linuxon https://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
 ```
 #### Vérifier
 ```bash
 sudo eopkg list-repo
 ```
 #### Installer un paquet
+
+Un bloc par paquet ; chaque lien mène à la page du projet.
+
+**[amv-converter](https://depoa.julien68.fr/Linuxon/amv-converter)** — convertit une vidéo en AMV pour petits lecteurs MP3/vidéo
+```bash
+sudo eopkg install amv-converter
+```
+
+**[btrfsmgr](https://depoa.julien68.fr/Linuxon/btrfsmgr)** — gestionnaire Btrfs (CLI)
 ```bash
 sudo eopkg install btrfsmgr
+```
+
+**[btrfsmgr-gui](https://depoa.julien68.fr/Linuxon/btrfsmgr-gui)** — interface graphique de btrfsmgr (GTK4)
+```bash
 sudo eopkg install btrfsmgr-gui
+```
+
+**[deb-to-eopkg](https://depoa.julien68.fr/Linuxon/deb-to-eopkg)** — convertit un paquet `.deb` en `.eopkg` (Rust)
+```bash
 sudo eopkg install deb-to-eopkg
+```
+
+**[ollama-manager-qt](https://depoa.julien68.fr/Linuxon/ollama-manager-qt)** — gestionnaire de modèles Ollama (Qt6)
+```bash
+sudo eopkg install ollama-manager-qt
+```
+
+**[solus-external-kernel-manager](https://depoa.julien68.fr/Linuxon/solus-external-kernel-manager)** — installe des noyaux CachyOS / Zen / Liquorix sur Solus (Qt6)
+```bash
 sudo eopkg install solus-external-kernel-manager
 ```
 
@@ -116,9 +143,11 @@ Après avoir déposé un nouveau `.eopkg` dans le bon sous-dossier
 
 ## Projets sources
 
-| Paquet         | GitHub                                                           |
+| Paquet         | Gitea                                                            |
 |----------------|------------------------------------------------------------------|
-| btrfsmgr       | https://github.com/Julien684/btrfsmgr |
-| btrfsmgr-gui   | https://github.com/Julien684/btrfsmgr-gui |
-| deb-to-eopkg   | https://github.com/Julien684/deb-to-eopkg |
-| solus-external-kernel-manager | https://github.com/Julien684/solus-external-kernel-manager |
+| amv-converter  | https://depoa.julien68.fr/Linuxon/amv-converter |
+| btrfsmgr       | https://depoa.julien68.fr/Linuxon/btrfsmgr |
+| btrfsmgr-gui   | https://depoa.julien68.fr/Linuxon/btrfsmgr-gui |
+| deb-to-eopkg   | https://depoa.julien68.fr/Linuxon/deb-to-eopkg |
+| ollama-manager-qt | https://depoa.julien68.fr/Linuxon/ollama-manager-qt |
+| solus-external-kernel-manager | https://depoa.julien68.fr/Linuxon/solus-external-kernel-manager |
