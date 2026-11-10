@@ -22,7 +22,7 @@ Restore is a CoW swap (two renames) - no data is copied.
 Written in Rust (Qt6), sharing the btrfsmgr core.
 Requires btrfs-progs, systemd and qt6-base.
 Unofficial; not affiliated with Solus or the BTRFS project.]]></Description>
-            <Description xml:lang="fr"><![CDATA[btrfsmgr-gui est une interface graphique (GTK4) de gestion des instantanés de
+            <Description xml:lang="fr"><![CDATA[btrfsmgr-gui est une interface graphique (Qt6) de gestion des instantanés de
 sous-volumes BTRFS sous Linux. Elle permet de créer, lister, restaurer et
 supprimer des instantanés ; de planifier des instantanés automatiques via des
 timers systemd avec une politique de rétention ; et de générer des entrées de
