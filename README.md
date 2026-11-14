@@ -32,22 +32,20 @@ https://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
 
 ### Commandes (eopkg 5.0)
 
-#### Ajouter le dépôt (syntaxe: add-repo <nom> <url>, sans options)
+#### Ajouter le dépôt et activer Discover / GNOME Software
 ```bash
 sudo eopkg add-repo linuxon https://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
+sudo eopkg update-repo
+sudo eopkg install linuxon-appstream-catalog
+sudo appstreamcli refresh --source=os
 ```
 
-> **⚠️ Pour voir les applications dans Discover / GNOME Software**, le dépôt
-> seul ne suffit pas : il faut aussi installer le catalogue AppStream, puis
-> rafraîchir le cache et relancer Discover.
-> ```bash
-> sudo eopkg update-repo
-> sudo eopkg install linuxon-appstream-catalog
-> sudo appstreamcli refresh --source=os
-> ```
-> Sans ce paquet, Discover ne trouve rien (il ne lit que le catalogue des
-> dépôts officiels et les métadonnées des paquets déjà installés). Vérification :
-> `appstreamcli search amv` doit renvoyer `fr.julien68.AmvConverter`.
+> Le paquet `linuxon-appstream-catalog` est **indispensable** pour que les
+> applications apparaissent dans Discover / GNOME Software : le dépôt seul ne
+> suffit pas (Discover ne lit que le catalogue des dépôts officiels et les
+> métadonnées des paquets déjà installés). Après le `refresh`, relancer
+> Discover. Vérification : `appstreamcli search amv` doit renvoyer
+> `fr.julien68.AmvConverter`.
 
 #### Vérifier
 ```bash

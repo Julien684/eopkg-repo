@@ -16,7 +16,7 @@
   <name>BTRFS Manager</name>
   <summary>BTRFS snapshot manager TUI - create, list, restore, and automate BTRFS subvolume snapshots</summary>
   <pkgname>btrfsmgr</pkgname>
-  <icon type="stock">chronometer</icon>
+  <icon type="cached" width="128" height="128">btrfsmgr_btrfsmgr.png</icon>
   <categories>
     <category>System</category>
   </categories>
@@ -26,7 +26,7 @@
   <name>BTRFS Manager (GUI)</name>
   <summary>BTRFS snapshot manager GUI - create, list, restore, and automate BTRFS subvolume snapshots</summary>
   <pkgname>btrfsmgr-gui</pkgname>
-  <icon type="stock">chronometer</icon>
+  <icon type="cached" width="128" height="128">btrfsmgr-gui_btrfsmgr-gui.png</icon>
   <categories>
     <category>System</category>
   </categories>
