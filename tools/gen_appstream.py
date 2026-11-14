@@ -219,6 +219,10 @@ def metainfo_xml(app, info, today):
         L.append(f'  <launchable type="desktop-id">{app["desktop"]}</launchable>')
     if app.get("icon"):
         L.append(f'  <icon type="stock">{app["icon"]}</icon>')
+    if app["kind"] == "console-application":
+        # obligatoire pour une application console (sinon alerte
+        # console-app-no-binary) : le binaire fourni dans le PATH
+        L.append(f'  <provides><binary>{info["binary"]}</binary></provides>')
     L.append(f'  <url type="homepage">{escape(info["homepage"])}</url>')
     L.append('  <content_rating type="oars-1.1"/>')
     L.append("  <description>")
@@ -292,6 +296,7 @@ def main():
 
         version, release_date = (history[1], history[2]) if history else (meta["version"], today)
         info = dict(
+            binary=app.get("binary") or pkg,
             version=version,
             release_date=release_date,
             license=meta["license"],

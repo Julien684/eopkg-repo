@@ -8,6 +8,7 @@
   <summary>Convert Debian .deb packages into Solus .eopkg packages</summary>
   <summary xml:lang="fr">Convertir des paquets Debian .deb en paquets Solus .eopkg</summary>
   <icon type="stock">deb-to-eopkg</icon>
+  <provides><binary>deb-to-eopkg</binary></provides>
   <url type="homepage">https://depoa.julien68.fr/Linuxon/deb-to-eopkg</url>
   <content_rating type="oars-1.1"/>
   <description>
