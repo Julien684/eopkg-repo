@@ -1,7 +1,7 @@
 # eopkg-repo — Linuxon / Solus EOPKG Repository
 
 Repository EOPKG personnel pour les paquets Solus `amv-converter`, `btrfsmgr`,
-`btrfsmgr-gui`, `deb-to-eopkg`, `ollama-manager-qt` et
+`btrfsmgr-gui`, `deb-to-eopkg`, `eopkg-converter`, `ollama-manager-qt` et
 `solus-external-kernel-manager`.
 
 > **Testé de bout-en-bout sur Solus 4.9 (eopkg 5.0.0)** :
@@ -73,6 +73,11 @@ sudo eopkg install btrfsmgr-gui
 **[deb-to-eopkg](https://depoa.julien68.fr/Linuxon/deb-to-eopkg)** — convertit un paquet `.deb` en `.eopkg` (Rust)
 ```bash
 sudo eopkg install deb-to-eopkg
+```
+
+**[eopkg-converter](https://depoa.julien68.fr/Linuxon/eopkg-converter)** — convertit un `.deb` ou un `.rpm` en `.eopkg`, avec interface graphique Qt6
+```bash
+sudo eopkg install eopkg-converter
 ```
 
 **[ollama-manager-qt](https://depoa.julien68.fr/Linuxon/ollama-manager-qt)** — gestionnaire de modèles Ollama (Qt6)
