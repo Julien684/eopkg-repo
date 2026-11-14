@@ -9,6 +9,7 @@
   <summary>Ollama Model Manager - graphical Qt6 manager for Ollama: download, update and remove models</summary>
   <summary xml:lang="fr">Ollama Model Manager — gestionnaire graphique (Qt6) d'Ollama : télécharger, mettre à jour et supprimer des modèles</summary>
   <launchable type="desktop-id">ollama-manager-qt.desktop</launchable>
+  <icon type="stock">ollama-manager-qt</icon>
   <url type="homepage">https://depoa.julien68.fr/Linuxon/ollama-manager-qt</url>
   <content_rating type="oars-1.1"/>
   <description>

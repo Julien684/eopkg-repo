@@ -92,6 +92,7 @@ APPS = [
          summary_en="Convert Debian .deb packages into Solus .eopkg packages",
          summary_fr="Convertir des paquets Debian .deb en paquets Solus .eopkg",
          cats=["Development", "Utility"],
+         icon="deb-to-eopkg",
          keywords=["deb", "eopkg", "package", "convert", "solus"]),
 ]
 
@@ -216,6 +217,8 @@ def metainfo_xml(app, info, today):
         L.append(f'  <summary xml:lang="fr">{escape(info["summary_fr"])}</summary>')
     if app.get("desktop"):
         L.append(f'  <launchable type="desktop-id">{app["desktop"]}</launchable>')
+    if app.get("icon"):
+        L.append(f'  <icon type="stock">{app["icon"]}</icon>')
     L.append(f'  <url type="homepage">{escape(info["homepage"])}</url>')
     L.append('  <content_rating type="oars-1.1"/>')
     L.append("  <description>")
@@ -308,7 +311,7 @@ def main():
             app = dict(app, shot=raw_url(*app["shot"]))
         app = dict(app, desktop=desktop_path.rsplit("/", 1)[-1] if desktop_path else None,
                    kind=app.get("kind", "desktop-application"),
-                   icon=icon_name or None)
+                   icon=app.get("icon") or icon_name or None)
 
         (OUT / "metainfo" / f"{app['id']}.metainfo.xml").write_text(
             metainfo_xml(app, info, today), encoding="utf-8")

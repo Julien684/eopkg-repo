@@ -194,24 +194,25 @@ Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Description>
             <PartOf>system.utilities</PartOf>
             <License>GPL-3.0</License>
             <RuntimeDependencies>
+
             </RuntimeDependencies>
             <History>
-                <Update release="12">
-                    <Date>2026-10-12</Date>
-                    <Version>2.7.4</Version>
-                    <Comment><![CDATA[Rust rewrite of the conversion tool.]]></Comment>
-                    <Name><![CDATA[Julien]]></Name>
-                    <Email>julien@example.com</Email>
-                </Update>
+            <Update release="13">
+            <Date>2026-11-14</Date>
+            <Version>2.7.4</Version>
+            <Comment>deb-to-eopkg 2.7.4 : metadonnees AppStream (fiche + icone) dans le paquet</Comment>
+            <Name>Julien</Name>
+            <Email>julien_solus@use.startmail.com</Email>
+            </Update>
             </History>
             <BuildHost>solus-local</BuildHost>
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>1392070</InstalledSize>
-            <PackageSize>540196</PackageSize>
-            <PackageHash>efd775094421f38870f5421ea59d303335e44914</PackageHash>
-            <PackageURI>d/deb-to-eopkg/deb-to-eopkg-2.7.4-12-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>1405115</InstalledSize>
+            <PackageSize>551984</PackageSize>
+            <PackageHash>43a03b0b2ef5e930c055d42f509307198d5c0ece</PackageHash>
+            <PackageURI>d/deb-to-eopkg/deb-to-eopkg-2.7.4-13-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>deb-to-eopkg</Name>
@@ -441,7 +442,7 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
 
             </RuntimeDependencies>
             <History>
-            <Update release="5">
+            <Update release="6">
             <Date>2026-11-14</Date>
             <Version>1.0.0</Version>
             <Comment>linuxon-appstream-catalog 1.0.0 : catalogue AppStream du depot (Discover / GNOME Software)</Comment>
@@ -453,10 +454,10 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>46190</InstalledSize>
-            <PackageSize>47131</PackageSize>
-            <PackageHash>2e52bc82daf700178c608460401926f79452d7a7</PackageHash>
-            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-5-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>50292</InstalledSize>
+            <PackageSize>51223</PackageSize>
+            <PackageHash>e1d39776a255b3a6c2ed4d62d9e338461a4bc0ad</PackageHash>
+            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-6-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>linuxon-appstream-catalog</Name>
