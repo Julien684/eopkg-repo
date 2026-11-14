@@ -1,0 +1,10 @@
+linuxon-appstream-catalog — AppStream metadata for the Linuxon eopkg repository
+
+The catalog data in this package (component ids, categories, package
+associations, file layout) is released under CC0 1.0 Universal
+(https://creativecommons.org/publicdomain/zero/1.0/).
+
+The application names, summaries, descriptions, licenses and icons embedded
+in the catalog come from the packages of the Linuxon repository, which are
+distributed under GPL-3.0-or-later (see each package's own
+/usr/share/licenses/<package>/LICENSE).

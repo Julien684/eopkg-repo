@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>fr.julien68.OllamaModelManager</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <developer id="fr.julien68"><name>Julien</name></developer>
+  <name>Ollama Model Manager</name>
+  <name xml:lang="fr">Gestionnaire de modèles Ollama</name>
+  <summary>Ollama Model Manager - graphical Qt6 manager for Ollama: download, update and remove models</summary>
+  <summary xml:lang="fr">Ollama Model Manager — gestionnaire graphique (Qt6) d'Ollama : télécharger, mettre à jour et supprimer des modèles</summary>
+  <launchable type="desktop-id">ollama-manager-qt.desktop</launchable>
+  <url type="homepage">https://depoa.julien68.fr/Linuxon/ollama-manager-qt</url>
+  <content_rating type="oars-1.1"/>
+  <description>
+    <p>ollama-manager-qt is a small graphical Qt6 manager, written in Rust (via qtrs), for administering an Ollama server: model download with a live progress bar, updating one model or all of them, removal with confirmation, and a table of local models (name, size, parameters, date, capabilities). The server address is configurable at startup and persisted in QSettings. Single binary (~3 MB) with no runtime dependency beyond qt6-base (system-provided). Unofficial.</p>
+    <p xml:lang="fr">ollama-manager-qt est un petit gestionnaire graphique (Qt6), écrit en Rust, pour administrer un serveur Ollama : téléchargement de modèles avec barre de progression en direct, mise à jour d'un modèle ou de tous les modèles, suppression avec confirmation, et liste des modèles locaux (nom, taille, paramètres, date, capacités). L'adresse du serveur est configurable au lancement et persistée dans ~/.config/OllamaManager/ollama-manager-qt.ini (INI). Binaire unique (~3 Mo) sans dépendance runtime à part qt6-base (fourni par le système). Non officiel.</p>
+  </description>
+  <categories>
+    <category>Network</category>
+  </categories>
+  <keywords>
+    <keyword>ollama</keyword>
+    <keyword>model</keyword>
+    <keyword>llm</keyword>
+    <keyword>ai</keyword>
+  </keywords>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://depoa.julien68.fr/Linuxon/ollama-manager-qt/raw/branch/main/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="0.1.0" date="2026-11-01"/>
+  </releases>
+</component>

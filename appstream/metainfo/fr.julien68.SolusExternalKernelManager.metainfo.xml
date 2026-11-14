@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>fr.julien68.SolusExternalKernelManager</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <developer id="fr.julien68"><name>Julien</name></developer>
+  <name>Solus External Kernel Manager</name>
+  <summary>Graphical Qt6 manager to install and manage external Linux kernels (CachyOS, Zen, Liquorix) on Solus</summary>
+  <summary xml:lang="fr">Gestionnaire graphique Qt6 pour installer et gérer des noyaux Linux externes (CachyOS, Zen, Liquorix) sur Solus</summary>
+  <launchable type="desktop-id">solus-external-kernel-manager.desktop</launchable>
+  <url type="homepage">https://depoa.julien68.fr/Linuxon/solus-external-kernel-manager</url>
+  <content_rating type="oars-1.1"/>
+  <description>
+    <p>Solus External Kernel Manager is a small graphical manager (Qt6, written in Rust) that installs and manages external Linux kernels on a Solus distribution. Three providers are supported, one per tab: CachyOS kernels (mirror.cachyos.org), the Arch linux-zen kernel (extra repo) and the Liquorix linux-lqx kernel (liquorix.net). It reads the repository database, downloads the .pkg.tar.zst with SHA256 verification, discovers the real modules directory and vmlinuz from the archive, installs (modules + depmod, ESP copy, dracut initrd, systemd-boot entry) and can set the default boot kernel. The running kernel is protected against removal. CLI: --fetch-test, --install &lt;kind&gt;, --list. Requires Qt6 Base, dracut and systemd-boot (or clr-boot-manager) with the ESP mounted at /boot. Unofficial; not affiliated with Solus, CachyOS, Zen or Liquorix.</p>
+    <p xml:lang="fr">Solus External Kernel Manager est un petit gestionnaire graphique (Qt6, écrit en Rust) qui installe et gère des noyaux Linux externes sur une distribution Solus. Trois fournisseurs sont pris en charge, un par onglet : les noyaux CachyOS (mirror.cachyos.org), le noyau linux-zen d'Arch (dépôt extra) et le noyau linux-lqx Liquorix (liquorix.net). Il lit la base du dépôt, télécharge le .pkg.tar.zst en vérifiant le SHA256, découvre le dossier de modules et le vmlinuz réels dans l'archive, installe (modules + depmod, copie sur l'ESP, initrd dracut, entrée systemd-boot) et peut choisir le noyau de démarrage par défaut. Le noyau en cours d'utilisation est protégé contre la suppression. Ligne de commande : --fetch-test, --install &lt;kind&gt;, --list. Nécessite Qt6 Base, dracut et systemd-boot (ou clr-boot-manager) avec l'ESP monté en /boot. Non officiel ; non affilié à Solus, CachyOS, Zen ni Liquorix.</p>
+  </description>
+  <categories>
+    <category>System</category>
+  </categories>
+  <keywords>
+    <keyword>kernel</keyword>
+    <keyword>cachyos</keyword>
+    <keyword>zen</keyword>
+    <keyword>liquorix</keyword>
+    <keyword>boot</keyword>
+  </keywords>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://depoa.julien68.fr/Linuxon/solus-external-kernel-manager/raw/branch/main/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="0.1.1" date="2026-11-05"/>
+  </releases>
+</component>

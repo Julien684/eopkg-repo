@@ -74,6 +74,12 @@ sudo eopkg install ollama-manager-qt
 sudo eopkg install solus-external-kernel-manager
 ```
 
+**[linuxon-appstream-catalog](https://depoa.julien68.fr/Linuxon/eopkg-repo)** — métadonnées AppStream : rend les applications du dépôt visibles dans Discover / GNOME Software
+```bash
+sudo eopkg install linuxon-appstream-catalog
+sudo appstreamcli refresh --source=os
+```
+
 #### Retirer le dépôt
 ```bash
 sudo eopkg remove-repo linuxon
@@ -99,6 +105,14 @@ eopkg-repo/
 ├── eopkg-index.xml.sha256sum
 ├── eopkg-index.xml.xz.sha1sum
 ├── eopkg-index.xml.xz.sha256sum
+├── appstream/                 ← catalogue AppStream (généré) + fiches metainfo
+│   ├── linuxon-main.xml.gz
+│   ├── icons/<taille>/*.png
+│   └── metainfo/<id>.metainfo.xml
+├── tools/                     ← gen_appstream.py, build_appstream_eopkg.py, sync_index.py
+├── l/
+│   └── linuxon-appstream-catalog/
+│       └── linuxon-appstream-catalog-1.0.0-1-1-x86_64.eopkg
 ├── b/
 │   ├── btrfsmgr/
 │   │   └── btrfsmgr-1.0.13-2-1-x86_64.eopkg
@@ -114,6 +128,55 @@ eopkg-repo/
 
 Le chemin `<lettre>/<nom-paquet>/<fichier>.eopkg` suit la convention du CDN
 officiel Solus (`cdn.getsol.us/repo/polaris/`).
+
+## Discover / GNOME Software (AppStream)
+
+Les applications du dépôt apparaissent dans **Discover** (KDE) et **GNOME
+Software** grâce à un catalogue AppStream livré par le paquet
+`linuxon-appstream-catalog`.
+
+**Pourquoi un catalogue séparé :**
+
+- le backend PackageKit `eopkg` de Solus ne publie **aucune** donnée AppStream
+  par dépôt — `libpk_backend_eopkg.so` ne contient aucune référence à
+  `appstream`/`swcatalog`, et il n'existe pas de méthode « AppStream par
+  dépôt » dans PackageKit ;
+- Discover / GNOME Software ne lisent que :
+  1. les catalogues système `/usr/share/swcatalog/xml/*.xml.gz`, fournis par le
+     paquet `appstream-catalog` de Solus, qui ne couvre que les dépôts
+     officiels ;
+  2. les fichiers `metainfo` des paquets **installés**
+     (`/usr/share/metainfo/`) ;
+- le paquet `linuxon-appstream-catalog` installe donc
+  `/usr/share/swcatalog/xml/linuxon-main.xml.gz` (+ les icônes), avec un
+  `<pkgname>` par composant : c'est ce lien qui associe la fiche AppStream au
+  paquet eopkg et rend le bouton « Installer » fonctionnel via PackageKit.
+
+Après installation ou mise à jour du catalogue :
+
+```bash
+sudo appstreamcli refresh --source=os
+```
+
+Vérification : `appstreamcli search btrfsmgr` (ou `appstreamcli get
+fr.julien68.BtrfsManager`), puis relancer Discover.
+
+**Régénérer le catalogue** (après ajout ou mise à jour d'un paquet) :
+
+```bash
+python3 tools/gen_appstream.py            # appstream/linuxon-main.xml.gz + appstream/metainfo/
+# incrémenter RELEASE dans tools/build_appstream_eopkg.py
+python3 tools/build_appstream_eopkg.py    # l/linuxon-appstream-catalog/*.eopkg
+python3 tools/sync_index.py linuxon-appstream-catalog
+```
+
+`tools/gen_appstream.py` déduit nom, résumé, catégories et icône du `.desktop`
+et des icônes embarqués dans le `.eopkg` le plus récent, et prend version,
+licence et textes bilingues dans `eopkg-index.xml`. Les fiches
+`appstream/metainfo/<id>.metainfo.xml` produites au passage sont destinées à
+être **embarquées dans chaque paquet d'application** (`usr/share/metainfo/`)
+lors de sa prochaine release : un paquet qui porte sa propre fiche reste
+reconnu même sans le catalogue.
 
 ## Regénérer l'index
 

@@ -531,4 +531,63 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
                 </Packager>
             </Source>
         </Package>
+        <Package>
+            <Name>linuxon-appstream-catalog</Name>
+            <Summary xml:lang="en"><![CDATA[AppStream metadata for the Linuxon repository: its applications show up in Discover and GNOME Software]]></Summary>
+            <Summary xml:lang="fr"><![CDATA[Métadonnées AppStream du dépôt Linuxon : ses applications apparaissent dans Discover et GNOME Software]]></Summary>
+            <Description xml:lang="en"><![CDATA[This package ships the AppStream catalog of the Linuxon eopkg
+repository (/usr/share/swcatalog/xml/linuxon-main.xml.gz plus its icons).
+Solus' PackageKit backend does not publish per-repository AppStream data, and
+the distribution catalog (appstream-catalog) only covers the official
+repositories, so a third-party repository must provide its own catalog.
+Without it, an application only becomes visible once installed (and only if
+its own package ships a metainfo file). With it, Discover and GNOME Software
+can browse, search and install the repository's applications, mapping each
+AppStream component to its eopkg package through <pkgname>. After installing
+or updating this package, refresh the AppStream cache with
+"sudo appstreamcli refresh --source=os" (Discover may need a restart).]]></Description>
+            <Description xml:lang="fr"><![CDATA[Ce paquet fournit le catalogue AppStream du dépôt eopkg Linuxon
+(/usr/share/swcatalog/xml/linuxon-main.xml.gz et ses icônes). Le backend
+PackageKit de Solus ne publie aucune donnée AppStream par dépôt, et le
+catalogue de la distribution (appstream-catalog) ne couvre que les dépôts
+officiels : un dépôt tiers doit donc fournir le sien. Sans lui, une
+application n'apparaît qu'une fois installée (et seulement si son propre
+paquet embarque un fichier metainfo). Avec lui, Discover et GNOME Software
+peuvent parcourir, rechercher et installer les applications du dépôt, chaque
+composant AppStream étant relié à son paquet eopkg par <pkgname>. Après
+installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
+« sudo appstreamcli refresh --source=os » (un redémarrage de Discover peut
+être nécessaire).]]></Description>
+            <PartOf>desktop.core</PartOf>
+            <License>CC0-1.0</License>
+            <RuntimeDependencies>
+
+            </RuntimeDependencies>
+            <History>
+            <Update release="1">
+            <Date>2026-11-14</Date>
+            <Version>1.0.0</Version>
+            <Comment>linuxon-appstream-catalog 1.0.0 : catalogue AppStream du depot (Discover / GNOME Software)</Comment>
+            <Name>Julien</Name>
+            <Email>julien_solus@use.startmail.com</Email>
+            </Update>
+            </History>
+            <BuildHost>solus-local</BuildHost>
+            <Distribution>Solus</Distribution>
+            <DistributionRelease>1</DistributionRelease>
+            <Architecture>x86_64</Architecture>
+            <InstalledSize>34474</InstalledSize>
+            <PackageSize>35498</PackageSize>
+            <PackageHash>d759db58ee4952e9822838af6542f961af6c9033</PackageHash>
+            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-1-1-x86_64.eopkg</PackageURI>
+            <PackageFormat>1.2</PackageFormat>
+            <Source>
+                <Name>linuxon-appstream-catalog</Name>
+                <Homepage>https://depoa.julien68.fr/Linuxon/eopkg-repo</Homepage>
+                <Packager>
+                    <Name>Julien</Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Packager>
+            </Source>
+        </Package>
     </PISI>
