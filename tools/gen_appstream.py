@@ -25,6 +25,7 @@ Usage: python3 tools/gen_appstream.py
 """
 import gzip
 import io
+import os
 import re
 import tarfile
 import zipfile
@@ -39,7 +40,22 @@ INDEX = ROOT / "eopkg-index.xml"
 ORIGIN = "linuxon-main"
 DEVELOPER_ID = "fr.julien68"
 DEVELOPER_NAME = "Julien"
+# Hôte cible : "gitea" (défaut) ou "github" — le miroir GitHub porte ses propres
+# liens, comme les README des deux copies.
+HOST = os.environ.get("AS_HOST", "gitea").lower()
 GITEA = "https://depoa.julien68.fr/Linuxon"
+GITHUB = "https://github.com/Julien684"
+
+
+def homepage(pkg):
+    return f"{GITHUB}/{pkg}" if HOST == "github" else f"{GITEA}/{pkg}"
+
+
+def raw_url(pkg, path):
+    """URL brute d'un fichier du dépôt source du paquet, selon l'hôte."""
+    if HOST == "github":
+        return f"https://raw.githubusercontent.com/Julien684/{pkg}/main/{path}"
+    return f"{GITEA}/{pkg}/raw/branch/main/{path}"
 
 # Catégories AppStream autorisées (vocabulaire freedesktop). Les catégories du
 # .desktop sont filtrées là-dedans ; Filesystem (desktop) -> System.
@@ -54,21 +70,21 @@ DESKTOP_CATEGORY_MAP = {"Filesystem": "System", "FileTools": "Utility"}
 APPS = [
     dict(pkg="amv-converter", id="fr.julien68.AmvConverter",
          keywords=["amv", "video", "convert", "ffmpeg", "player"],
-         shot=f"{GITEA}/amv-converter/raw/branch/main/assets/screenshot.png"),
+         shot=("amv-converter", "assets/screenshot.png")),
     dict(pkg="btrfsmgr", id="fr.julien68.BtrfsManager",
          keywords=["btrfs", "snapshot", "subvolume", "restore", "tui"],
          stock="chronometer"),
     dict(pkg="btrfsmgr-gui", id="fr.julien68.BtrfsManagerGui",
          keywords=["btrfs", "snapshot", "subvolume", "restore", "gui"],
          stock="chronometer",
-         shot=f"{GITEA}/btrfsmgr-gui/raw/branch/main/gui-screenshot.png"),
+         shot=("btrfsmgr-gui", "gui-screenshot.png")),
     dict(pkg="ollama-manager-qt", id="fr.julien68.OllamaModelManager",
          keywords=["ollama", "model", "llm", "ai"],
-         shot=f"{GITEA}/ollama-manager-qt/raw/branch/main/screenshot.png"),
+         shot=("ollama-manager-qt", "screenshot.png")),
     dict(pkg="solus-external-kernel-manager",
          id="fr.julien68.SolusExternalKernelManager",
          keywords=["kernel", "cachyos", "zen", "liquorix", "boot"],
-         shot=f"{GITEA}/solus-external-kernel-manager/raw/branch/main/screenshot.png"),
+         shot=("solus-external-kernel-manager", "screenshot.png")),
     # Pas de .desktop : application console, métadonnées fournies à la main.
     dict(pkg="deb-to-eopkg", id="fr.julien68.DebToEopkg",
          kind="console-application",
@@ -272,7 +288,7 @@ def main():
             version=version,
             release_date=release_date,
             license=meta["license"],
-            homepage=f"{GITEA}/{pkg}",
+            homepage=homepage(pkg),
             name_en=app.get("name_en") or dt.get("Name") or pkg,
             name_fr=app.get("name_fr") or dt.get("Name[fr]", ""),
             # Summary/Description de l'index : bilingues et tenus à jour
@@ -284,6 +300,8 @@ def main():
             desc_fr=meta["desc_fr"],
             cats=app.get("cats") or as_categories(dt.get("Categories")),
         )
+        if isinstance(app.get("shot"), tuple):
+            app = dict(app, shot=raw_url(*app["shot"]))
         app = dict(app, desktop=desktop_path.rsplit("/", 1)[-1] if desktop_path else None,
                    kind=app.get("kind", "desktop-application"),
                    icon=icon_name or None)
@@ -311,7 +329,7 @@ def main():
                f'<components version="1.0" origin="{ORIGIN}" time="{today}T00:00:00Z">\n'
                + "\n".join(components) + "\n</components>\n")
     (OUT / f"{ORIGIN}.xml").write_text(catalog, encoding="utf-8")
-    (OUT / f"{ORIGIN}.xml.gz").write_bytes(gzip.compress(catalog.encode("utf-8"), 9))
+    (OUT / f"{ORIGIN}.xml.gz").write_bytes(gzip.compress(catalog.encode("utf-8"), 9, mtime=0))
 
     print("Catalogue AppStream généré :")
     print("\n".join(report))
