@@ -10,6 +10,11 @@
     <category>AudioVideo</category>
     <category>Video</category>
   </categories>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://depoa.julien68.fr/Linuxon/amv-converter/raw/branch/main/assets/screenshot.png</image>
+    </screenshot>
+  </screenshots>
 </component>
 <component type="desktop-application">
   <id>fr.julien68.BtrfsManager</id>
@@ -20,6 +25,11 @@
   <categories>
     <category>System</category>
   </categories>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://depoa.julien68.fr/Linuxon/btrfsmgr/raw/branch/main/screenshot.png</image>
+    </screenshot>
+  </screenshots>
 </component>
 <component type="desktop-application">
   <id>fr.julien68.BtrfsManagerGui</id>
@@ -30,6 +40,11 @@
   <categories>
     <category>System</category>
   </categories>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://depoa.julien68.fr/Linuxon/btrfsmgr-gui/raw/branch/main/gui-screenshot.png</image>
+    </screenshot>
+  </screenshots>
 </component>
 <component type="desktop-application">
   <id>fr.julien68.OllamaModelManager</id>
@@ -40,6 +55,11 @@
   <categories>
     <category>Network</category>
   </categories>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://depoa.julien68.fr/Linuxon/ollama-manager-qt/raw/branch/main/screenshot.png</image>
+    </screenshot>
+  </screenshots>
 </component>
 <component type="desktop-application">
   <id>fr.julien68.SolusExternalKernelManager</id>
@@ -50,6 +70,11 @@
   <categories>
     <category>System</category>
   </categories>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://depoa.julien68.fr/Linuxon/solus-external-kernel-manager/raw/branch/main/screenshot.png</image>
+    </screenshot>
+  </screenshots>
 </component>
 <component type="console-application">
   <id>fr.julien68.DebToEopkg</id>

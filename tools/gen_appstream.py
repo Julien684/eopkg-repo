@@ -73,7 +73,7 @@ APPS = [
          shot=("amv-converter", "assets/screenshot.png")),
     dict(pkg="btrfsmgr", id="fr.julien68.BtrfsManager",
          keywords=["btrfs", "snapshot", "subvolume", "restore", "tui"],
-         stock="chronometer"),
+         shot=("btrfsmgr", "screenshot.png")),
     dict(pkg="btrfsmgr-gui", id="fr.julien68.BtrfsManagerGui",
          keywords=["btrfs", "snapshot", "subvolume", "restore", "gui"],
          stock="chronometer",
@@ -257,6 +257,10 @@ def catalog_component(app, info, icon_files):
     L.append("  <categories>")
     L += [f"    <category>{c}</category>" for c in info["cats"]]
     L.append("  </categories>")
+    if app.get("shot"):
+        L += ["  <screenshots>", '    <screenshot type="default">',
+              f'      <image type="source">{escape(app["shot"])}</image>',
+              "    </screenshot>", "  </screenshots>"]
     L.append("</component>")
     return "\n".join(L)
 

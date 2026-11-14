@@ -159,7 +159,7 @@ Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Description>
 
             </RuntimeDependencies>
             <History>
-            <Update release="16">
+            <Update release="17">
             <Date>2026-11-14</Date>
             <Version>1.0.15</Version>
             <Comment>btrfsmgr 1.0.15 initial package</Comment>
@@ -171,10 +171,10 @@ Non officiel ; non affilié à Solus ni au projet BTRFS.]]></Description>
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>3172815</InstalledSize>
-            <PackageSize>1216033</PackageSize>
-            <PackageHash>30d2a6c658c7898c975c69f6ca4646a343232a12</PackageHash>
-            <PackageURI>b/btrfsmgr/btrfsmgr-1.0.15-16-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>3203797</InstalledSize>
+            <PackageSize>1243432</PackageSize>
+            <PackageHash>0482a3c4603b922e664472fbce953b21738df3e1</PackageHash>
+            <PackageURI>b/btrfsmgr/btrfsmgr-1.0.15-17-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>btrfsmgr</Name>
@@ -441,7 +441,7 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
 
             </RuntimeDependencies>
             <History>
-            <Update release="4">
+            <Update release="5">
             <Date>2026-11-14</Date>
             <Version>1.0.0</Version>
             <Comment>linuxon-appstream-catalog 1.0.0 : catalogue AppStream du depot (Discover / GNOME Software)</Comment>
@@ -453,10 +453,10 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>46074</InstalledSize>
-            <PackageSize>47009</PackageSize>
-            <PackageHash>bcd6effdc6dc2e9a3b613652105e63b0538fa8a9</PackageHash>
-            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-4-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>46190</InstalledSize>
+            <PackageSize>47131</PackageSize>
+            <PackageHash>2e52bc82daf700178c608460401926f79452d7a7</PackageHash>
+            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-5-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>linuxon-appstream-catalog</Name>
