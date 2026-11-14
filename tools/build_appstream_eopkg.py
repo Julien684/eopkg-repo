@@ -15,6 +15,7 @@ import sys
 import tarfile
 import zipfile
 from datetime import date
+from xml.sax.saxutils import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -23,7 +24,7 @@ AS = ROOT / "appstream"
 
 PACKAGE_NAME = "linuxon-appstream-catalog"
 VERSION = "1.0.0"
-RELEASE = 1          # ⚠ incrémenter à CHAQUE régénération du catalogue
+RELEASE = 3          # ⚠ incrémenter à CHAQUE régénération du catalogue
 DIST_RELEASE = 1
 ARCH = "x86_64"
 DIST_NAME = "Solus"
@@ -133,8 +134,25 @@ def build():
     today = date.today().isoformat()
     installed_size = sum(len(d) for _, d, _ in entries)
 
+    # Un <RuntimeDependencies> VIDE fait planter eopkg (free(): double free dans
+    # la vérification des dépendances inverses) : ne l'émettre que s'il y a
+    # réellement des dépendances, comme tous les autres paquets du dépôt.
+    RUNTIME_DEPS: list[str] = []
+    deps_xml = ""
+    if RUNTIME_DEPS:
+        deps_xml = ("        <RuntimeDependencies>\n"
+                    + "".join(f"            <Dependency>{d}</Dependency>\n"
+                              for d in RUNTIME_DEPS)
+                    + "        </RuntimeDependencies>\n")
+
     def a(s: str) -> str:
         return s.encode("ascii", "replace").decode("ascii")
+
+    # Le texte des descriptions doit être ÉCHAPPÉ : « <pkgname> » y figure
+    # littéralement et, laissé brut, il est lu comme un élément XML — eopkg
+    # 5.0 plante alors au parsing du paquet (« free(): double free »).
+    desc_en = escape(a(DESC_EN))
+    desc_fr = escape(DESC_FR)
 
     metadata_xml = f"""<PISI>
     <Source>
@@ -149,13 +167,11 @@ def build():
         <Name>{PACKAGE_NAME}</Name>
         <Summary xml:lang="en">{a(SUMMARY_EN)}</Summary>
         <Summary xml:lang="fr">{SUMMARY_FR}</Summary>
-        <Description xml:lang="en">{a(DESC_EN)}</Description>
-        <Description xml:lang="fr">{DESC_FR}</Description>
+        <Description xml:lang="en">{desc_en}</Description>
+        <Description xml:lang="fr">{desc_fr}</Description>
         <PartOf>{PART_OF}</PartOf>
         <License>CC0-1.0</License>
-        <RuntimeDependencies>
-        </RuntimeDependencies>
-        <History>
+{deps_xml}        <History>
             <Update release="{RELEASE}">
                 <Date>{today}</Date>
                 <Version>{VERSION}</Version>
