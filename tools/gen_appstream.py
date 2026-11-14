@@ -87,7 +87,6 @@ APPS = [
          shot=("solus-external-kernel-manager", "screenshot.png")),
     # Pas de .desktop : application console, métadonnées fournies à la main.
     dict(pkg="deb-to-eopkg", id="fr.julien68.DebToEopkg",
-         kind="console-application",
          name_en="deb-to-eopkg", name_fr="deb-to-eopkg",
          summary_en="Convert Debian .deb packages into Solus .eopkg packages",
          summary_fr="Convertir des paquets Debian .deb en paquets Solus .eopkg",
@@ -314,7 +313,8 @@ def main():
         )
         if isinstance(app.get("shot"), tuple):
             app = dict(app, shot=raw_url(*app["shot"]))
-        app = dict(app, desktop=desktop_path.rsplit("/", 1)[-1] if desktop_path else None,
+        app = dict(app, desktop=(desktop_path.rsplit("/", 1)[-1] if desktop_path
+                                 else app.get("desktop")),
                    kind=app.get("kind", "desktop-application"),
                    icon=app.get("icon") or icon_name or None)
 

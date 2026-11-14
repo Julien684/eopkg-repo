@@ -76,7 +76,7 @@
     </screenshot>
   </screenshots>
 </component>
-<component type="console-application">
+<component type="desktop-application">
   <id>fr.julien68.DebToEopkg</id>
   <name>deb-to-eopkg</name>
   <summary>Convert Debian .deb packages into Solus .eopkg packages</summary>
