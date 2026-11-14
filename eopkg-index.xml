@@ -468,4 +468,42 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
                 </Packager>
             </Source>
         </Package>
+        <Package>
+            <Name>eopkg-converter</Name>
+            <Summary xml:lang="en"><![CDATA[Convert a Debian .deb or an RPM package into a Solus .eopkg.]]></Summary>
+            <Summary xml:lang="fr"><![CDATA[Convertit un paquet Debian (.deb) ou un paquet RPM (.rpm) en paquet Solus (.eopkg).]]></Summary>
+            <Description xml:lang="en"><![CDATA[eopkg-converter is a Rust tool that converts a Debian .deb or an RPM package into an installable Solus .eopkg package. It ships two binaries: a command-line converter (eopkg-converter) and a Qt6 graphical interface (eopkg-converter-gui). The .eopkg produced is a conformant archive (ZIP of metadata.xml, files.xml and install.tar.xz) preserving file types, modes and symlinks/hardlinks. Usage: eopkg-converter package.deb|package.rpm destination/]]></Description>
+            <Description xml:lang="fr"><![CDATA[eopkg-converter est un outil Rust qui convertit un paquet Debian (.deb) ou un paquet RPM (.rpm) en paquet Solus (.eopkg) installable. Il fournit deux binaires : un convertisseur en ligne de commande (eopkg-converter) et une interface graphique Qt6 (eopkg-converter-gui). Le .eopkg produit est une archive conforme (ZIP de metadata.xml, files.xml et install.tar.xz) qui preserve les types de fichiers, les modes et les liens symboliques/physiques. A chaque conversion, un dossier au nom du paquet est cree a cote du .eopkg avec les scripts de maintenance et les dependances du paquet d'origine. Usage : eopkg-converter paquet.deb|paquet.rpm destination/]]></Description>
+            <PartOf>system.utilities</PartOf>
+            <License>GPL-3.0</License>
+            <RuntimeDependencies>
+            <Dependency>qt6-base-gui</Dependency>
+            </RuntimeDependencies>
+            <History>
+            <Update release="1">
+            <Date>2026-11-14</Date>
+            <Version>1.0.2</Version>
+            <Comment>Fork of deb-to-eopkg: adds RPM support and a Qt6 GUI.</Comment>
+            <Name>Julien</Name>
+            <Email>julien_solus@use.startmail.com</Email>
+            </Update>
+            </History>
+            <BuildHost>solus-local</BuildHost>
+            <Distribution>Solus</Distribution>
+            <DistributionRelease>1</DistributionRelease>
+            <Architecture>x86_64</Architecture>
+            <InstalledSize>2965395</InstalledSize>
+            <PackageSize>693392</PackageSize>
+            <PackageHash>012ca1de02026958492bfb0650adc03b2f236339</PackageHash>
+            <PackageURI>e/eopkg-converter/eopkg-converter-1.0.2-1-1-x86_64.eopkg</PackageURI>
+            <PackageFormat>1.2</PackageFormat>
+            <Source>
+                <Name>eopkg-converter</Name>
+                <Homepage>https://depoa.julien68.fr/Linuxon/eopkg-converter</Homepage>
+                <Packager>
+                    <Name>Julien</Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Packager>
+            </Source>
+        </Package>
     </PISI>
