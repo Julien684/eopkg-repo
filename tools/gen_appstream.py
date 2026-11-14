@@ -39,7 +39,7 @@ INDEX = ROOT / "eopkg-index.xml"
 
 ORIGIN = "linuxon-main"
 DEVELOPER_ID = "fr.julien68"
-DEVELOPER_NAME = "Julien"
+DEVELOPER_NAME = "Linuxon"
 # Hôte cible : "gitea" (défaut) ou "github" — le miroir GitHub porte ses propres
 # liens, comme les README des deux copies.
 HOST = os.environ.get("AS_HOST", "gitea").lower()
@@ -254,6 +254,7 @@ def catalog_component(app, info, icon_files):
         f"  <name>{escape(info['name_en'])}</name>",
         f"  <summary>{escape(info['summary_en'])}</summary>",
         f"  <pkgname>{app['pkg']}</pkgname>",
+        f'  <developer id="{DEVELOPER_ID}"><name>{DEVELOPER_NAME}</name></developer>',
     ]
     if app.get("icon") and CATALOG_ICON_SIZE in icon_files:
         L.append(f'  <icon type="cached" width="{CATALOG_ICON_SIZE}" '

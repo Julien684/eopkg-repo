@@ -3,7 +3,7 @@
   <id>fr.julien68.BtrfsManager</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <developer id="fr.julien68"><name>Julien</name></developer>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
   <name>BTRFS Manager</name>
   <summary>BTRFS snapshot manager TUI - create, list, restore, and automate BTRFS subvolume snapshots</summary>
   <summary xml:lang="fr">Gestionnaire d'instantanés BTRFS en TUI — créer, lister, restaurer et automatiser les instantanés de sous-volumes BTRFS</summary>

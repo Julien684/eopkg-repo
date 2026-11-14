@@ -442,7 +442,7 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
 
             </RuntimeDependencies>
             <History>
-            <Update release="8">
+            <Update release="9">
             <Date>2026-11-14</Date>
             <Version>1.0.0</Version>
             <Comment>linuxon-appstream-catalog 1.0.0 : catalogue AppStream du depot (Discover / GNOME Software)</Comment>
@@ -454,10 +454,10 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>50286</InstalledSize>
-            <PackageSize>51212</PackageSize>
-            <PackageHash>6ea0d482c94f2086da3c0637a18ca8618469d579</PackageHash>
-            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-8-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>50311</InstalledSize>
+            <PackageSize>51246</PackageSize>
+            <PackageHash>29423ad4b582aae11bb7e974d59c0089a89ac4bf</PackageHash>
+            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-9-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>linuxon-appstream-catalog</Name>

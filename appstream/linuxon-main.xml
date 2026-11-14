@@ -5,6 +5,7 @@
   <name>AMV Converter</name>
   <summary>Graphical Qt6 converter for videos to the AMV format, for small MP3/video players</summary>
   <pkgname>amv-converter</pkgname>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
   <icon type="cached" width="128" height="128">amv-converter_amv-converter.png</icon>
   <categories>
     <category>AudioVideo</category>
@@ -21,6 +22,7 @@
   <name>BTRFS Manager</name>
   <summary>BTRFS snapshot manager TUI - create, list, restore, and automate BTRFS subvolume snapshots</summary>
   <pkgname>btrfsmgr</pkgname>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
   <icon type="cached" width="128" height="128">btrfsmgr_btrfsmgr.png</icon>
   <categories>
     <category>System</category>
@@ -36,6 +38,7 @@
   <name>BTRFS Manager (GUI)</name>
   <summary>BTRFS snapshot manager GUI - create, list, restore, and automate BTRFS subvolume snapshots</summary>
   <pkgname>btrfsmgr-gui</pkgname>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
   <icon type="cached" width="128" height="128">btrfsmgr-gui_btrfsmgr-gui.png</icon>
   <categories>
     <category>System</category>
@@ -51,6 +54,7 @@
   <name>Ollama Model Manager</name>
   <summary>Ollama Model Manager - graphical Qt6 manager for Ollama: download, update and remove models</summary>
   <pkgname>ollama-manager-qt</pkgname>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
   <icon type="cached" width="128" height="128">ollama-manager-qt_ollama-manager-qt.png</icon>
   <categories>
     <category>Network</category>
@@ -66,6 +70,7 @@
   <name>Solus External Kernel Manager</name>
   <summary>Graphical Qt6 manager to install and manage external Linux kernels (CachyOS, Zen, Liquorix) on Solus</summary>
   <pkgname>solus-external-kernel-manager</pkgname>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
   <icon type="cached" width="128" height="128">solus-external-kernel-manager_solus-external-kernel-manager.png</icon>
   <categories>
     <category>System</category>
@@ -81,6 +86,7 @@
   <name>deb-to-eopkg</name>
   <summary>Convert Debian .deb packages into Solus .eopkg packages</summary>
   <pkgname>deb-to-eopkg</pkgname>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
   <icon type="cached" width="128" height="128">deb-to-eopkg_deb-to-eopkg.png</icon>
   <categories>
     <category>Development</category>

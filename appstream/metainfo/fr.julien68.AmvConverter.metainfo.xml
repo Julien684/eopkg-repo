@@ -3,7 +3,7 @@
   <id>fr.julien68.AmvConverter</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <developer id="fr.julien68"><name>Julien</name></developer>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
   <name>AMV Converter</name>
   <summary>Graphical Qt6 converter for videos to the AMV format, for small MP3/video players</summary>
   <summary xml:lang="fr">Convertisseur graphique (Qt6) de vidéos au format AMV pour petits lecteurs MP3/vidéo</summary>

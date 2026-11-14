@@ -3,7 +3,7 @@
   <id>fr.julien68.OllamaModelManager</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <developer id="fr.julien68"><name>Julien</name></developer>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
   <name>Ollama Model Manager</name>
   <name xml:lang="fr">Gestionnaire de modèles Ollama</name>
   <summary>Ollama Model Manager - graphical Qt6 manager for Ollama: download, update and remove models</summary>

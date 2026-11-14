@@ -3,10 +3,11 @@
   <id>fr.julien68.DebToEopkg</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
-  <developer id="fr.julien68"><name>Julien</name></developer>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
   <name>deb-to-eopkg</name>
   <summary>Convert Debian .deb packages into Solus .eopkg packages</summary>
   <summary xml:lang="fr">Convertir des paquets Debian .deb en paquets Solus .eopkg</summary>
+  <launchable type="desktop-id">deb-to-eopkg.desktop</launchable>
   <icon type="stock">deb-to-eopkg</icon>
   <url type="homepage">https://depoa.julien68.fr/Linuxon/deb-to-eopkg</url>
   <content_rating type="oars-1.1"/>
