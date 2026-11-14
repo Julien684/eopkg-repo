@@ -85,6 +85,9 @@ APPS = [
          id="fr.julien68.SolusExternalKernelManager",
          keywords=["kernel", "cachyos", "zen", "liquorix", "boot"],
          shot=("solus-external-kernel-manager", "screenshot.png")),
+    dict(pkg="eopkg-converter", id="fr.julien68.EopkgConverter",
+         keywords=["deb", "rpm", "eopkg", "package", "convert", "solus"],
+         shot=("eopkg-converter", "assets/screenshot.png")),
     # Pas de .desktop : application console, métadonnées fournies à la main.
     dict(pkg="deb-to-eopkg", id="fr.julien68.DebToEopkg",
          name_en="deb-to-eopkg", name_fr="deb-to-eopkg",

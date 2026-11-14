@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>fr.julien68.EopkgConverter</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
+  <name>Eopkg Converter</name>
+  <summary>Convert a Debian .deb or an RPM package into a Solus .eopkg.</summary>
+  <summary xml:lang="fr">Convertit un paquet Debian (.deb) ou un paquet RPM (.rpm) en paquet Solus (.eopkg).</summary>
+  <launchable type="desktop-id">eopkg-converter.desktop</launchable>
+  <icon type="stock">eopkg-converter</icon>
+  <url type="homepage">https://depoa.julien68.fr/Linuxon/eopkg-converter</url>
+  <content_rating type="oars-1.1"/>
+  <description>
+    <p>eopkg-converter is a Rust tool that converts a Debian .deb or an RPM package into an installable Solus .eopkg package. It ships two binaries: a command-line converter (eopkg-converter) and a Qt6 graphical interface (eopkg-converter-gui). The .eopkg produced is a conformant archive (ZIP of metadata.xml, files.xml and install.tar.xz) preserving file types, modes and symlinks/hardlinks. Usage: eopkg-converter package.deb|package.rpm destination/</p>
+    <p xml:lang="fr">eopkg-converter est un outil Rust qui convertit un paquet Debian (.deb) ou un paquet RPM (.rpm) en paquet Solus (.eopkg) installable. Il fournit deux binaires : un convertisseur en ligne de commande (eopkg-converter) et une interface graphique Qt6 (eopkg-converter-gui). Le .eopkg produit est une archive conforme (ZIP de metadata.xml, files.xml et install.tar.xz) qui preserve les types de fichiers, les modes et les liens symboliques/physiques. A chaque conversion, un dossier au nom du paquet est cree a cote du .eopkg avec les scripts de maintenance et les dependances du paquet d'origine. Usage : eopkg-converter paquet.deb|paquet.rpm destination/</p>
+  </description>
+  <categories>
+    <category>System</category>
+  </categories>
+  <keywords>
+    <keyword>deb</keyword>
+    <keyword>rpm</keyword>
+    <keyword>eopkg</keyword>
+    <keyword>package</keyword>
+    <keyword>convert</keyword>
+    <keyword>solus</keyword>
+  </keywords>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://depoa.julien68.fr/Linuxon/eopkg-converter/raw/branch/main/assets/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="1.0.2" date="2026-11-14"/>
+  </releases>
+</component>

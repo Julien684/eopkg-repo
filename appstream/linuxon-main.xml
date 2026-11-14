@@ -82,6 +82,22 @@
   </screenshots>
 </component>
 <component type="desktop-application">
+  <id>fr.julien68.EopkgConverter</id>
+  <name>Eopkg Converter</name>
+  <summary>Convert a Debian .deb or an RPM package into a Solus .eopkg.</summary>
+  <pkgname>eopkg-converter</pkgname>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
+  <icon type="cached" width="128" height="128">eopkg-converter_eopkg-converter.png</icon>
+  <categories>
+    <category>System</category>
+  </categories>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://depoa.julien68.fr/Linuxon/eopkg-converter/raw/branch/main/assets/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+</component>
+<component type="desktop-application">
   <id>fr.julien68.DebToEopkg</id>
   <name>deb-to-eopkg</name>
   <summary>Convert Debian .deb packages into Solus .eopkg packages</summary>
