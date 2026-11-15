@@ -434,7 +434,7 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
 
             </RuntimeDependencies>
             <History>
-            <Update release="21">
+            <Update release="22">
             <Date>2026-11-15</Date>
             <Version>1.0.0</Version>
             <Comment>linuxon-appstream-catalog 1.0.0 : catalogue AppStream du depot (Discover / GNOME Software)</Comment>
@@ -448,8 +448,8 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
             <Architecture>x86_64</Architecture>
             <InstalledSize>62730</InstalledSize>
             <PackageSize>63693</PackageSize>
-            <PackageHash>8ae0feb7869b42fe9b7e024856e6d55df5ba70cf</PackageHash>
-            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-21-1-x86_64.eopkg</PackageURI>
+            <PackageHash>3f6def6968340212560d66f2da11d9977124e3d5</PackageHash>
+            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-22-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>linuxon-appstream-catalog</Name>
@@ -528,9 +528,17 @@ qt6-base-gui. Non officiel.]]></Description>
             <Dependency>qt6-base-gui</Dependency>
             </RuntimeDependencies>
             <History>
+            <Update release="10">
+                <Date>2026-11-15</Date>
+                <Version>0.1.9</Version>
+                <Comment>nix-manager 0.1.9 : tri des tableaux</Comment>
+                <Name>Julien</Name>
+                <Email>julien_solus@use.startmail.com</Email>
+            </Update>
+
             <Update release="9">
                 <Date>2026-11-15</Date>
-                <Version>0.1.8</Version>
+                <Version>0.1.9</Version>
                 <Comment>nix-manager 0.1.8 : nix profile add</Comment>
                 <Name>Julien</Name>
                 <Email>julien_solus@use.startmail.com</Email>
@@ -604,10 +612,10 @@ qt6-base-gui. Non officiel.]]></Description>
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>3386801</InstalledSize>
-            <PackageSize>1286621</PackageSize>
-            <PackageHash>47222a438b75785126ef66eb17891f9130e797d2</PackageHash>
-            <PackageURI>n/nix-manager/nix-manager-0.1.8-9-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>3426333</InstalledSize>
+            <PackageSize>1295019</PackageSize>
+            <PackageHash>5fd04bb0bfc8893298024f0af7140542548e5909</PackageHash>
+            <PackageURI>n/nix-manager/nix-manager-0.1.9-10-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>nix-manager</Name>
