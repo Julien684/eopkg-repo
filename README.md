@@ -1,8 +1,15 @@
+> **⚠️ `deb-to-eopkg` est remplacé par [`eopkg-converter`](https://github.com/Julien684/eopkg-converter)** — convertit `.deb` **et** `.rpm`, avec interface graphique Qt6. Ce paquet est conservé pour compatibilité mais n'est plus développé.
+
 # eopkg-repo — Linuxon / Solus EOPKG Repository
 
 Repository EOPKG personnel pour les paquets Solus `amv-converter`, `btrfsmgr`,
-`btrfsmgr-gui`, `deb-to-eopkg`, `eopkg-converter`, `ollama-manager-qt` et
+`btrfsmgr-gui`, `eopkg-converter`, `ollama-manager-qt` et
 `solus-external-kernel-manager`.
+
+> **`deb-to-eopkg` a été retiré de ce dépôt.** Il est remplacé par
+> **[`eopkg-converter`](https://github.com/Julien684/eopkg-converter)**,
+> qui convertit les `.deb` **et** les `.rpm` et fournit une interface graphique
+> Qt6. L'ancien dépôt `deb-to-eopkg` est archivé (lecture seule).
 
 > **Testé de bout-en-bout sur Solus 4.9 (eopkg 5.0.0)** :
 > `eopkg add-repo` + `eopkg install btrfsmgr` fonctionnent.
@@ -70,12 +77,7 @@ sudo eopkg install btrfsmgr
 sudo eopkg install btrfsmgr-gui
 ```
 
-**[deb-to-eopkg](https://depoa.julien68.fr/Linuxon/deb-to-eopkg)** — convertit un paquet `.deb` en `.eopkg` (Rust)
-```bash
-sudo eopkg install deb-to-eopkg
-```
-
-**[eopkg-converter](https://depoa.julien68.fr/Linuxon/eopkg-converter)** — convertit un `.deb` ou un `.rpm` en `.eopkg`, avec interface graphique Qt6
+**[eopkg-converter](https://depoa.julien68.fr/Linuxon/eopkg-converter)** — convertit un `.deb` ou un `.rpm` en `.eopkg`, avec interface graphique Qt6. **Remplace `deb-to-eopkg`** (archivé).
 ```bash
 sudo eopkg install eopkg-converter
 ```
@@ -134,9 +136,6 @@ eopkg-repo/
 │   │   └── btrfsmgr-1.0.13-2-1-x86_64.eopkg
 │   └── btrfsmgr-gui/
 │       └── btrfsmgr-gui-1.1.2-1-1-x86_64.eopkg
-└── d/
-    └── deb-to-eopkg/
-        └── deb-to-eopkg-2.2.0-1-1-x86_64.eopkg
 └── s/
     └── solus-external-kernel-manager/
         └── solus-external-kernel-manager-0.1.1-2-1-x86_64.eopkg
@@ -227,6 +226,5 @@ Après avoir déposé un nouveau `.eopkg` dans le bon sous-dossier
 | amv-converter  | https://depoa.julien68.fr/Linuxon/amv-converter |
 | btrfsmgr       | https://depoa.julien68.fr/Linuxon/btrfsmgr |
 | btrfsmgr-gui   | https://depoa.julien68.fr/Linuxon/btrfsmgr-gui |
-| deb-to-eopkg   | https://depoa.julien68.fr/Linuxon/deb-to-eopkg |
 | ollama-manager-qt | https://depoa.julien68.fr/Linuxon/ollama-manager-qt |
 | solus-external-kernel-manager | https://depoa.julien68.fr/Linuxon/solus-external-kernel-manager |

@@ -91,14 +91,6 @@ APPS = [
     dict(pkg="nix-manager", id="fr.julien68.NixManager",
          keywords=["nix", "nixpkgs", "flake", "package", "solus"],
          shot=("nix-manager", "screenshot.png")),
-    # Pas de .desktop : application console, métadonnées fournies à la main.
-    dict(pkg="deb-to-eopkg", id="fr.julien68.DebToEopkg",
-         name_en="deb-to-eopkg", name_fr="deb-to-eopkg",
-         summary_en="Convert Debian .deb packages into Solus .eopkg packages",
-         summary_fr="Convertir des paquets Debian .deb en paquets Solus .eopkg",
-         cats=["Development", "Utility"],
-         icon="deb-to-eopkg",
-         keywords=["deb", "eopkg", "package", "convert", "solus"]),
 ]
 
 ICON_SIZES = (48, 64, 128)

@@ -113,16 +113,4 @@
     </screenshot>
   </screenshots>
 </component>
-<component type="desktop-application">
-  <id>fr.julien68.DebToEopkg</id>
-  <name>deb-to-eopkg</name>
-  <summary>Convert Debian .deb packages into Solus .eopkg packages</summary>
-  <pkgname>deb-to-eopkg</pkgname>
-  <developer id="fr.julien68"><name>Linuxon</name></developer>
-  <icon type="cached" width="128" height="128">deb-to-eopkg_deb-to-eopkg.png</icon>
-  <categories>
-    <category>Development</category>
-    <category>Utility</category>
-  </categories>
-</component>
 </components>
