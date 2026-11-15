@@ -486,7 +486,7 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
             <Architecture>x86_64</Architecture>
             <InstalledSize>66881</InstalledSize>
             <PackageSize>67856</PackageSize>
-            <PackageHash>6acf988905e753d78cf352739b721fcea2d6073e</PackageHash>
+            <PackageHash>57f08717404605a648c70e98b84fe668de851433</PackageHash>
             <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-11-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>

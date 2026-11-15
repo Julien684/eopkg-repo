@@ -146,7 +146,9 @@ def latest_artifact(pkg):
         m = re.search(r"-(\d+)-1-x86_64\.eopkg$", p.name)
         return int(m.group(1)) if m else -1
 
-    return max(files, key=rel)
+    # Deux versions peuvent partager le même numéro de release (ex. 1.0.2-1 et
+    # 1.0.3-1) : on départage par la date de modification du fichier.
+    return max(files, key=lambda p: (rel(p), p.stat().st_mtime))
 
 
 def read_payload(pkg):
