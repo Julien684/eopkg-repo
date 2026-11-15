@@ -13,8 +13,8 @@
   <url type="homepage">https://depoa.julien68.fr/Linuxon/ollama-manager-qt</url>
   <content_rating type="oars-1.1"/>
   <description>
-    <p>ollama-manager-qt is a small graphical Qt6 manager, written in Rust (via qtrs), for administering an Ollama server: model download with a live progress bar, updating one model or all of them, removal with confirmation, and a table of local models (name, size, parameters, date, capabilities). The server address is configurable at startup and persisted in QSettings. Single binary (~3 MB) with no runtime dependency beyond qt6-base (system-provided). Unofficial.</p>
-    <p xml:lang="fr">ollama-manager-qt est un petit gestionnaire graphique (Qt6), écrit en Rust, pour administrer un serveur Ollama : téléchargement de modèles avec barre de progression en direct, mise à jour d'un modèle ou de tous les modèles, suppression avec confirmation, et liste des modèles locaux (nom, taille, paramètres, date, capacités). L'adresse du serveur est configurable au lancement et persistée dans ~/.config/OllamaManager/ollama-manager-qt.ini (INI). Binaire unique (~3 Mo) sans dépendance runtime à part qt6-base (fourni par le système). Non officiel.</p>
+    <p>ollama-manager-qt is a small graphical Qt6 manager, written in Rust (via qtrs), for administering an Ollama server: model download with a live progress bar, updating one model or all of them, removal with confirmation, a table of local models (name, size, parameters, date, capabilities) and a monitor tab to load/unload models and set their keep_alive. The server address is configurable at startup and persisted in QSettings. Single binary (~3 MB) with no runtime dependency beyond qt6-base (system-provided). Unofficial.</p>
+    <p xml:lang="fr">ollama-manager-qt est un petit gestionnaire graphique (Qt6), écrit en Rust, pour administrer un serveur Ollama : téléchargement de modèles avec barre de progression en direct, mise à jour d'un modèle ou de tous les modèles, suppression avec confirmation, liste des modèles locaux (nom, taille, paramètres, date, capacités) et onglet Moniteur pour charger/décharger un modèle et régler son keep_alive. L'adresse du serveur est configurable au lancement et persistée dans ~/.config/OllamaManager/ollama-manager-qt.ini (INI). Binaire unique (~3 Mo) sans dépendance runtime à part qt6-base (fourni par le système). Non officiel.</p>
   </description>
   <categories>
     <category>Network</category>
@@ -31,6 +31,6 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="0.1.0" date="2026-11-14"/>
+    <release version="0.1.4" date="2026-11-15"/>
   </releases>
 </component>

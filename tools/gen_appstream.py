@@ -88,6 +88,9 @@ APPS = [
     dict(pkg="eopkg-converter", id="fr.julien68.EopkgConverter",
          keywords=["deb", "rpm", "eopkg", "package", "convert", "solus"],
          shot=("eopkg-converter", "assets/screenshot.png")),
+    dict(pkg="nix-manager", id="fr.julien68.NixManager",
+         keywords=["nix", "nixpkgs", "flake", "package", "solus"],
+         shot=("nix-manager", "screenshot.png")),
     # Pas de .desktop : application console, métadonnées fournies à la main.
     dict(pkg="deb-to-eopkg", id="fr.julien68.DebToEopkg",
          name_en="deb-to-eopkg", name_fr="deb-to-eopkg",

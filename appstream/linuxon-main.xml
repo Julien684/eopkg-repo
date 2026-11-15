@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<components version="1.0" origin="linuxon-main" time="2026-11-14T00:00:00Z">
+<components version="1.0" origin="linuxon-main" time="2026-11-15T00:00:00Z">
 <component type="desktop-application">
   <id>fr.julien68.AmvConverter</id>
   <name>AMV Converter</name>
@@ -94,6 +94,22 @@
   <screenshots>
     <screenshot type="default">
       <image type="source">https://depoa.julien68.fr/Linuxon/eopkg-converter/raw/branch/main/assets/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+</component>
+<component type="desktop-application">
+  <id>fr.julien68.NixManager</id>
+  <name>Nix Manager</name>
+  <summary>Nix Manager - graphical Qt6 manager for Nix on Solus: install Nix, search and manage packages</summary>
+  <pkgname>nix-manager</pkgname>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
+  <icon type="cached" width="128" height="128">nix-manager_nix-manager.png</icon>
+  <categories>
+    <category>System</category>
+  </categories>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://depoa.julien68.fr/Linuxon/nix-manager/raw/branch/main/screenshot.png</image>
     </screenshot>
   </screenshots>
 </component>

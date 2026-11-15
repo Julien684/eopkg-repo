@@ -472,8 +472,8 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
 
             </RuntimeDependencies>
             <History>
-            <Update release="10">
-            <Date>2026-11-14</Date>
+            <Update release="11">
+            <Date>2026-11-15</Date>
             <Version>1.0.0</Version>
             <Comment>linuxon-appstream-catalog 1.0.0 : catalogue AppStream du depot (Discover / GNOME Software)</Comment>
             <Name>Julien</Name>
@@ -484,10 +484,10 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>56207</InstalledSize>
-            <PackageSize>57148</PackageSize>
-            <PackageHash>be53b80628742a638b8079aea5c2cc73a86016b7</PackageHash>
-            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-10-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>66881</InstalledSize>
+            <PackageSize>67856</PackageSize>
+            <PackageHash>6acf988905e753d78cf352739b721fcea2d6073e</PackageHash>
+            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-11-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>linuxon-appstream-catalog</Name>
@@ -530,6 +530,62 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
             <Source>
                 <Name>eopkg-converter</Name>
                 <Homepage>https://depoa.julien68.fr/Linuxon/eopkg-converter</Homepage>
+                <Packager>
+                    <Name>Julien</Name>
+                    <Email>julien_solus@use.startmail.com</Email>
+                </Packager>
+            </Source>
+        </Package>
+        <Package>
+            <Name>nix-manager</Name>
+            <Summary xml:lang="en"><![CDATA[Nix Manager - graphical Qt6 manager for Nix on Solus: install Nix, search and manage packages]]></Summary>
+            <Summary xml:lang="fr"><![CDATA[Nix Manager - gestionnaire graphique (Qt6) de Nix sur Solus : installation de Nix, recherche et gestion des paquets]]></Summary>
+            <Description xml:lang="en"><![CDATA[nix-manager is a graphical Qt6 manager, written in Rust, for using
+Nix on a non-NixOS distribution. It detects the Nix state (version, nix-daemon
+service, install mode, profile, space used by the /nix store, build sandbox),
+installs Nix in multi-user daemon mode through pkexec, uninstalls it with an
+explicit confirmation, searches nixpkgs, installs a package or an arbitrary
+flake into the USER profile (no root), lists the profile, upgrades it, cleans
+the store and integrates Nix applications into the desktop menu. Every command
+is streamed into a live journal and the controls are disabled while an
+operation runs. Single binary, single runtime dependency: qt6-base-gui.
+Unofficial.]]></Description>
+            <Description xml:lang="fr"><![CDATA[nix-manager est un gestionnaire graphique (Qt6) écrit en Rust
+pour utiliser Nix sur une distribution non-NixOS. Il détecte l'état de Nix
+(version, démon nix-daemon, mode d'installation, profil, espace occupé par
+/nix, bac à sable), installe Nix en mode démon multi-utilisateur via pkexec,
+le désinstalle avec confirmation explicite, recherche dans nixpkgs, installe
+un paquet ou un flake arbitraire dans le profil UTILISATEUR (sans root), liste
+le profil, met à jour, nettoie le magasin et intègre les applications Nix au
+menu. Toutes les commandes sont journalisées en direct et les boutons sont
+désactivés pendant une opération. Binaire unique, dépendance runtime unique :
+qt6-base-gui. Non officiel.]]></Description>
+            <PartOf>system.utils</PartOf>
+            <License>GPL-3.0-or-later</License>
+            <RuntimeDependencies>
+            <Dependency>qt6-base-gui</Dependency>
+            </RuntimeDependencies>
+            <History>
+            <Update release="1">
+            <Date>2026-11-15</Date>
+            <Version>0.1.0</Version>
+            <Comment>nix-manager 0.1.0 : version initiale (etat de Nix, installation/desinstallation via pkexec, recherche nixpkgs, profil utilisateur, flakes, mise a jour, nettoyage, integration au menu)</Comment>
+            <Name>Julien</Name>
+            <Email>julien_solus@use.startmail.com</Email>
+            </Update>
+            </History>
+            <BuildHost>solus-local</BuildHost>
+            <Distribution>Solus</Distribution>
+            <DistributionRelease>1</DistributionRelease>
+            <Architecture>x86_64</Architecture>
+            <InstalledSize>3254280</InstalledSize>
+            <PackageSize>1251609</PackageSize>
+            <PackageHash>8242831206ce071995d34bfcaadf425b6f77ef63</PackageHash>
+            <PackageURI>n/nix-manager/nix-manager-0.1.0-1-1-x86_64.eopkg</PackageURI>
+            <PackageFormat>1.2</PackageFormat>
+            <Source>
+                <Name>nix-manager</Name>
+                <Homepage>https://depoa.julien68.fr/Linuxon/nix-manager</Homepage>
                 <Packager>
                     <Name>Julien</Name>
                     <Email>julien_solus@use.startmail.com</Email>

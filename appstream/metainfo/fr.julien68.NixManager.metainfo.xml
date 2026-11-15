@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>fr.julien68.NixManager</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <developer id="fr.julien68"><name>Linuxon</name></developer>
+  <name>Nix Manager</name>
+  <name xml:lang="fr">Gestionnaire Nix</name>
+  <summary>Nix Manager - graphical Qt6 manager for Nix on Solus: install Nix, search and manage packages</summary>
+  <summary xml:lang="fr">Nix Manager - gestionnaire graphique (Qt6) de Nix sur Solus : installation de Nix, recherche et gestion des paquets</summary>
+  <launchable type="desktop-id">nix-manager.desktop</launchable>
+  <icon type="stock">nix-manager</icon>
+  <url type="homepage">https://depoa.julien68.fr/Linuxon/nix-manager</url>
+  <content_rating type="oars-1.1"/>
+  <description>
+    <p>nix-manager is a graphical Qt6 manager, written in Rust, for using Nix on a non-NixOS distribution. It detects the Nix state (version, nix-daemon service, install mode, profile, space used by the /nix store, build sandbox), installs Nix in multi-user daemon mode through pkexec, uninstalls it with an explicit confirmation, searches nixpkgs, installs a package or an arbitrary flake into the USER profile (no root), lists the profile, upgrades it, cleans the store and integrates Nix applications into the desktop menu. Every command is streamed into a live journal and the controls are disabled while an operation runs. Single binary, single runtime dependency: qt6-base-gui. Unofficial.</p>
+    <p xml:lang="fr">nix-manager est un gestionnaire graphique (Qt6) écrit en Rust pour utiliser Nix sur une distribution non-NixOS. Il détecte l'état de Nix (version, démon nix-daemon, mode d'installation, profil, espace occupé par /nix, bac à sable), installe Nix en mode démon multi-utilisateur via pkexec, le désinstalle avec confirmation explicite, recherche dans nixpkgs, installe un paquet ou un flake arbitraire dans le profil UTILISATEUR (sans root), liste le profil, met à jour, nettoie le magasin et intègre les applications Nix au menu. Toutes les commandes sont journalisées en direct et les boutons sont désactivés pendant une opération. Binaire unique, dépendance runtime unique : qt6-base-gui. Non officiel.</p>
+  </description>
+  <categories>
+    <category>System</category>
+  </categories>
+  <keywords>
+    <keyword>nix</keyword>
+    <keyword>nixpkgs</keyword>
+    <keyword>flake</keyword>
+    <keyword>package</keyword>
+    <keyword>solus</keyword>
+  </keywords>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://depoa.julien68.fr/Linuxon/nix-manager/raw/branch/main/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="0.1.0" date="2026-11-15"/>
+  </releases>
+</component>
