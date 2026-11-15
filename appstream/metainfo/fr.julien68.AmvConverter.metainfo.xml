@@ -9,7 +9,7 @@
   <summary xml:lang="fr">Convertisseur graphique (Qt6) de vidéos au format AMV pour petits lecteurs MP3/vidéo</summary>
   <launchable type="desktop-id">amv-converter.desktop</launchable>
   <icon type="stock">amv-converter</icon>
-  <url type="homepage">https://depoa.julien68.fr/Linuxon/amv-converter</url>
+  <url type="homepage">https://github.com/Julien684/amv-converter</url>
   <content_rating type="oars-1.1"/>
   <description>
     <p>amv-converter is a small graphical Qt6 tool that batch-converts videos to the AMV format for cheap MP3/video players (160x120, 128x96, 176x144, 160x128). Add files or a whole folder, pick the quality and the resolution, then convert everything in sequence. The French audio track is selected automatically when present in the source. The AMV format is a RIFF/AMV/AVI hybrid that ffmpeg encodes natively (amv + adpcm_ima_amv codecs). Automatic letterboxing preserves the image aspect ratio. Requires ffmpeg and ffprobe in the PATH.</p>
@@ -28,7 +28,7 @@
   </keywords>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://depoa.julien68.fr/Linuxon/amv-converter/raw/branch/main/assets/screenshot.png</image>
+      <image type="source">https://raw.githubusercontent.com/Julien684/amv-converter/main/assets/screenshot.png</image>
     </screenshot>
   </screenshots>
   <releases>

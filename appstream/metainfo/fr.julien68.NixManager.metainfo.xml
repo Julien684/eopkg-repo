@@ -10,7 +10,7 @@
   <summary xml:lang="fr">Nix Manager - gestionnaire graphique (Qt6) de Nix sur Solus : installation de Nix, recherche et gestion des paquets</summary>
   <launchable type="desktop-id">nix-manager.desktop</launchable>
   <icon type="stock">nix-manager</icon>
-  <url type="homepage">https://depoa.julien68.fr/Linuxon/nix-manager</url>
+  <url type="homepage">https://github.com/Julien684/nix-manager</url>
   <content_rating type="oars-1.1"/>
   <description>
     <p>nix-manager is a graphical Qt6 manager, written in Rust, for using Nix on a non-NixOS distribution. It detects the Nix state (version, nix-daemon service, install mode, profile, space used by the /nix store, build sandbox), installs Nix in multi-user daemon mode through pkexec, uninstalls it with an explicit confirmation, searches nixpkgs, installs a package or an arbitrary flake into the USER profile (no root), lists the profile, upgrades it, cleans the store and integrates Nix applications into the desktop menu. Every command is streamed into a live journal and the controls are disabled while an operation runs. Single binary, single runtime dependency: qt6-base-gui. Unofficial.</p>
@@ -28,7 +28,7 @@
   </keywords>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://depoa.julien68.fr/Linuxon/nix-manager/raw/branch/main/screenshot.png</image>
+      <image type="source">https://raw.githubusercontent.com/Julien684/nix-manager/main/screenshot.png</image>
     </screenshot>
   </screenshots>
   <releases>

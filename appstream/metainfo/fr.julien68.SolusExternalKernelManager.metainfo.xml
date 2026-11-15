@@ -9,7 +9,7 @@
   <summary xml:lang="fr">Gestionnaire graphique Qt6 pour installer et gérer des noyaux Linux externes (CachyOS, Zen, Liquorix) sur Solus</summary>
   <launchable type="desktop-id">solus-external-kernel-manager.desktop</launchable>
   <icon type="stock">solus-external-kernel-manager</icon>
-  <url type="homepage">https://depoa.julien68.fr/Linuxon/solus-external-kernel-manager</url>
+  <url type="homepage">https://github.com/Julien684/solus-external-kernel-manager</url>
   <content_rating type="oars-1.1"/>
   <description>
     <p>Solus External Kernel Manager is a small graphical manager (Qt6, written in Rust) that installs and manages external Linux kernels on a Solus distribution. Three providers are supported, one per tab: CachyOS kernels (mirror.cachyos.org), the Arch linux-zen kernel (extra repo) and the Liquorix linux-lqx kernel (liquorix.net). It reads the repository database, downloads the .pkg.tar.zst with SHA256 verification, discovers the real modules directory and vmlinuz from the archive, installs (modules + depmod, ESP copy, dracut initrd, systemd-boot entry) and can set the default boot kernel. The running kernel is protected against removal. CLI: --fetch-test, --install &lt;kind&gt;, --list. Requires Qt6 Base, dracut and systemd-boot (or clr-boot-manager) with the ESP mounted at /boot. Unofficial; not affiliated with Solus, CachyOS, Zen or Liquorix.</p>
@@ -27,7 +27,7 @@
   </keywords>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://depoa.julien68.fr/Linuxon/solus-external-kernel-manager/raw/branch/main/screenshot.png</image>
+      <image type="source">https://raw.githubusercontent.com/Julien684/solus-external-kernel-manager/main/screenshot.png</image>
     </screenshot>
   </screenshots>
   <releases>

@@ -1,9 +1,7 @@
-> **⚠️ `deb-to-eopkg` est remplacé par [`eopkg-converter`](https://github.com/Julien684/eopkg-converter)** — convertit `.deb` **et** `.rpm`, avec interface graphique Qt6. Ce paquet est conservé pour compatibilité mais n'est plus développé.
-
 # eopkg-repo — Linuxon / Solus EOPKG Repository
 
 Repository EOPKG personnel pour les paquets Solus `amv-converter`, `btrfsmgr`,
-`btrfsmgr-gui`, `eopkg-converter`, `ollama-manager-qt` et
+`btrfsmgr-gui`, `eopkg-converter`, `nix-manager`, `ollama-manager-qt` et
 `solus-external-kernel-manager`.
 
 > **`deb-to-eopkg` a été retiré de ce dépôt.** Il est remplacé par
@@ -31,17 +29,17 @@ Le CDN Solus officiel (`cdn.getsol.us`) utilise aussi le **hash brut seul** :
 URL publique :
 
 ```
-https://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
+https://raw.githubusercontent.com/Julien684/eopkg-repo/main/eopkg-index.xml
 ```
 
 > Les fichiers bruts (index et `.eopkg`) sont servis par
-> `depoa.julien68.fr/…/raw/branch/main/`, sans authentification.
+> `raw.githubusercontent.com/Julien684/…/main/`, sans authentification.
 
 ### Commandes (eopkg 5.0)
 
 #### Ajouter le dépôt et activer Discover / GNOME Software
 ```bash
-sudo eopkg add-repo linuxon https://depoa.julien68.fr/Linuxon/eopkg-repo/raw/branch/main/eopkg-index.xml
+sudo eopkg add-repo linuxon https://raw.githubusercontent.com/Julien684/eopkg-repo/main/eopkg-index.xml
 sudo eopkg update-repo
 sudo eopkg install linuxon-appstream-catalog
 sudo appstreamcli refresh --source=os
@@ -62,37 +60,42 @@ sudo eopkg list-repo
 
 Un bloc par paquet ; chaque lien mène à la page du projet.
 
-**[amv-converter](https://depoa.julien68.fr/Linuxon/amv-converter)** — convertit une vidéo en AMV pour petits lecteurs MP3/vidéo
+**[amv-converter](https://github.com/Julien684/amv-converter)** — convertit une vidéo en AMV pour petits lecteurs MP3/vidéo
 ```bash
 sudo eopkg install amv-converter
 ```
 
-**[btrfsmgr](https://depoa.julien68.fr/Linuxon/btrfsmgr)** — gestionnaire Btrfs (CLI)
+**[btrfsmgr](https://github.com/Julien684/btrfsmgr)** — gestionnaire Btrfs (CLI)
 ```bash
 sudo eopkg install btrfsmgr
 ```
 
-**[btrfsmgr-gui](https://depoa.julien68.fr/Linuxon/btrfsmgr-gui)** — interface graphique de btrfsmgr (Qt6)
+**[btrfsmgr-gui](https://github.com/Julien684/btrfsmgr-gui)** — interface graphique de btrfsmgr (Qt6)
 ```bash
 sudo eopkg install btrfsmgr-gui
 ```
 
-**[eopkg-converter](https://depoa.julien68.fr/Linuxon/eopkg-converter)** — convertit un `.deb` ou un `.rpm` en `.eopkg`, avec interface graphique Qt6. **Remplace `deb-to-eopkg`** (archivé).
+**[eopkg-converter](https://github.com/Julien684/eopkg-converter)** — convertit un `.deb` ou un `.rpm` en `.eopkg`, avec interface graphique Qt6. **Remplace `deb-to-eopkg`** (archivé).
 ```bash
 sudo eopkg install eopkg-converter
 ```
 
-**[ollama-manager-qt](https://depoa.julien68.fr/Linuxon/ollama-manager-qt)** — gestionnaire de modèles Ollama (Qt6)
+**[ollama-manager-qt](https://github.com/Julien684/ollama-manager-qt)** — gestionnaire de modèles Ollama (Qt6)
 ```bash
 sudo eopkg install ollama-manager-qt
 ```
 
-**[solus-external-kernel-manager](https://depoa.julien68.fr/Linuxon/solus-external-kernel-manager)** — installe des noyaux CachyOS / Zen / Liquorix sur Solus (Qt6)
+**[solus-external-kernel-manager](https://github.com/Julien684/solus-external-kernel-manager)** — installe des noyaux CachyOS / Zen / Liquorix sur Solus (Qt6)
 ```bash
 sudo eopkg install solus-external-kernel-manager
 ```
 
-**[linuxon-appstream-catalog](https://depoa.julien68.fr/Linuxon/eopkg-repo)** — métadonnées AppStream : rend les applications du dépôt visibles dans Discover / GNOME Software
+**[nix-manager](https://github.com/Julien684/nix-manager)** — installe et gère Nix et ses paquets sur Solus (Qt6)
+```bash
+sudo eopkg install nix-manager
+```
+
+**[linuxon-appstream-catalog](https://github.com/Julien684/eopkg-repo)** — métadonnées AppStream : rend les applications du dépôt visibles dans Discover / GNOME Software
 ```bash
 sudo eopkg install linuxon-appstream-catalog
 sudo appstreamcli refresh --source=os
@@ -223,8 +226,10 @@ Après avoir déposé un nouveau `.eopkg` dans le bon sous-dossier
 
 | Paquet         | Gitea                                                            |
 |----------------|------------------------------------------------------------------|
-| amv-converter  | https://depoa.julien68.fr/Linuxon/amv-converter |
-| btrfsmgr       | https://depoa.julien68.fr/Linuxon/btrfsmgr |
-| btrfsmgr-gui   | https://depoa.julien68.fr/Linuxon/btrfsmgr-gui |
-| ollama-manager-qt | https://depoa.julien68.fr/Linuxon/ollama-manager-qt |
-| solus-external-kernel-manager | https://depoa.julien68.fr/Linuxon/solus-external-kernel-manager |
+| amv-converter  | https://github.com/Julien684/amv-converter |
+| btrfsmgr       | https://github.com/Julien684/btrfsmgr |
+| btrfsmgr-gui   | https://github.com/Julien684/btrfsmgr-gui |
+| eopkg-converter | https://github.com/Julien684/eopkg-converter |
+| nix-manager    | https://github.com/Julien684/nix-manager |
+| ollama-manager-qt | https://github.com/Julien684/ollama-manager-qt |
+| solus-external-kernel-manager | https://github.com/Julien684/solus-external-kernel-manager |

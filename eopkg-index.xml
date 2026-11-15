@@ -73,7 +73,7 @@ de l'image. Necessite ffmpeg et ffprobe dans le PATH.]]></Description>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>amv-converter</Name>
-                <Homepage>https://depoa.julien68.fr/Linuxon/amv-converter</Homepage>
+                <Homepage>https://github.com/Julien684/amv-converter</Homepage>
                 <Packager>
                     <Name>Julien</Name>
                     <Email>julien_solus@use.startmail.com</Email>
@@ -321,7 +321,7 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>ollama-manager-qt</Name>
-                <Homepage>https://depoa.julien68.fr/Linuxon/ollama-manager-qt</Homepage>
+                <Homepage>https://github.com/Julien684/ollama-manager-qt</Homepage>
                 <Packager>
                     <Name>Julien</Name>
                     <Email>julien_solus@use.startmail.com</Email>
@@ -434,21 +434,7 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
 
             </RuntimeDependencies>
             <History>
-            <Update release="12">
-            <Date>2026-11-15</Date>
-            <Version>1.0.0</Version>
-            <Comment>Retrait de deb-to-eopkg du catalogue (projet archive)</Comment>
-            <Name>Julien</Name>
-            <Email>julien_solus@use.startmail.com</Email>
-            </Update>
-            <Update release="12">
-            <Date>2026-11-15</Date>
-            <Version>1.0.0</Version>
-            <Comment>Catalogue 1.0.0-12 : retrait de la fiche deb-to-eopkg (remplace par eopkg-converter)</Comment>
-            <Name>Julien</Name>
-            <Email>julien_solus@use.startmail.com</Email>
-            </Update>
-            <Update release="11">
+            <Update release="13">
             <Date>2026-11-15</Date>
             <Version>1.0.0</Version>
             <Comment>linuxon-appstream-catalog 1.0.0 : catalogue AppStream du depot (Discover / GNOME Software)</Comment>
@@ -460,14 +446,14 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>62725</InstalledSize>
-            <PackageSize>63701</PackageSize>
-            <PackageHash>04df2b7ceee1272442196bb3b964f86d47197331</PackageHash>
-            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-12-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>62730</InstalledSize>
+            <PackageSize>63694</PackageSize>
+            <PackageHash>5c281aec8ac4466b61b18bcc429ea3ad6aa548b9</PackageHash>
+            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-13-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>linuxon-appstream-catalog</Name>
-                <Homepage>https://depoa.julien68.fr/Linuxon/eopkg-repo</Homepage>
+                <Homepage>https://github.com/Julien684/eopkg-repo</Homepage>
                 <Packager>
                     <Name>Julien</Name>
                     <Email>julien_solus@use.startmail.com</Email>
@@ -505,7 +491,7 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>eopkg-converter</Name>
-                <Homepage>https://depoa.julien68.fr/Linuxon/eopkg-converter</Homepage>
+                <Homepage>https://github.com/Julien684/eopkg-converter</Homepage>
                 <Packager>
                     <Name>Julien</Name>
                     <Email>julien_solus@use.startmail.com</Email>
@@ -561,7 +547,7 @@ qt6-base-gui. Non officiel.]]></Description>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>nix-manager</Name>
-                <Homepage>https://depoa.julien68.fr/Linuxon/nix-manager</Homepage>
+                <Homepage>https://github.com/Julien684/nix-manager</Homepage>
                 <Packager>
                     <Name>Julien</Name>
                     <Email>julien_solus@use.startmail.com</Email>

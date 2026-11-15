@@ -9,7 +9,7 @@
   <summary xml:lang="fr">Convertit un paquet Debian (.deb) ou un paquet RPM (.rpm) en paquet Solus (.eopkg).</summary>
   <launchable type="desktop-id">eopkg-converter.desktop</launchable>
   <icon type="stock">eopkg-converter</icon>
-  <url type="homepage">https://depoa.julien68.fr/Linuxon/eopkg-converter</url>
+  <url type="homepage">https://github.com/Julien684/eopkg-converter</url>
   <content_rating type="oars-1.1"/>
   <description>
     <p>eopkg-converter is a Rust tool that converts a Debian .deb or an RPM package into an installable Solus .eopkg package. It ships two binaries: a command-line converter (eopkg-converter) and a Qt6 graphical interface (eopkg-converter-gui). The .eopkg produced is a conformant archive (ZIP of metadata.xml, files.xml and install.tar.xz) preserving file types, modes and symlinks/hardlinks. Usage: eopkg-converter package.deb|package.rpm destination/</p>
@@ -28,7 +28,7 @@
   </keywords>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://depoa.julien68.fr/Linuxon/eopkg-converter/raw/branch/main/assets/screenshot.png</image>
+      <image type="source">https://raw.githubusercontent.com/Julien684/eopkg-converter/main/assets/screenshot.png</image>
     </screenshot>
   </screenshots>
   <releases>

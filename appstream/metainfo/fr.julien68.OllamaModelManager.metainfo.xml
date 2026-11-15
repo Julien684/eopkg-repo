@@ -10,7 +10,7 @@
   <summary xml:lang="fr">Ollama Model Manager — gestionnaire graphique (Qt6) d'Ollama : télécharger, mettre à jour et supprimer des modèles</summary>
   <launchable type="desktop-id">ollama-manager-qt.desktop</launchable>
   <icon type="stock">ollama-manager-qt</icon>
-  <url type="homepage">https://depoa.julien68.fr/Linuxon/ollama-manager-qt</url>
+  <url type="homepage">https://github.com/Julien684/ollama-manager-qt</url>
   <content_rating type="oars-1.1"/>
   <description>
     <p>ollama-manager-qt is a small graphical Qt6 manager, written in Rust (via qtrs), for administering an Ollama server: model download with a live progress bar, updating one model or all of them, removal with confirmation, a table of local models (name, size, parameters, date, capabilities) and a monitor tab to load/unload models and set their keep_alive. The server address is configurable at startup and persisted in QSettings. Single binary (~3 MB) with no runtime dependency beyond qt6-base (system-provided). Unofficial.</p>
@@ -27,7 +27,7 @@
   </keywords>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://depoa.julien68.fr/Linuxon/ollama-manager-qt/raw/branch/main/screenshot.png</image>
+      <image type="source">https://raw.githubusercontent.com/Julien684/ollama-manager-qt/main/screenshot.png</image>
     </screenshot>
   </screenshots>
   <releases>
