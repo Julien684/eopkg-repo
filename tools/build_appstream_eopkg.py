@@ -24,7 +24,7 @@ AS = ROOT / "appstream"
 
 PACKAGE_NAME = "linuxon-appstream-catalog"
 VERSION = "1.0.0"
-RELEASE = 16          # ⚠ incrémenter à CHAQUE régénération du catalogue
+RELEASE = 17          # ⚠ incrémenter à CHAQUE régénération du catalogue
 DIST_RELEASE = 1
 ARCH = "x86_64"
 DIST_NAME = "Solus"
