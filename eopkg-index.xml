@@ -434,7 +434,7 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
 
             </RuntimeDependencies>
             <History>
-            <Update release="19">
+            <Update release="20">
             <Date>2026-11-15</Date>
             <Version>1.0.0</Version>
             <Comment>linuxon-appstream-catalog 1.0.0 : catalogue AppStream du depot (Discover / GNOME Software)</Comment>
@@ -447,9 +447,9 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
             <InstalledSize>62730</InstalledSize>
-            <PackageSize>63694</PackageSize>
-            <PackageHash>67b7a8b483f150543933727381b9ddbdb6e2e533</PackageHash>
-            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-19-1-x86_64.eopkg</PackageURI>
+            <PackageSize>63693</PackageSize>
+            <PackageHash>a260e23ecb7b139191f4ba49b13458e2e9e0605d</PackageHash>
+            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-20-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>linuxon-appstream-catalog</Name>
@@ -528,9 +528,17 @@ qt6-base-gui. Non officiel.]]></Description>
             <Dependency>qt6-base-gui</Dependency>
             </RuntimeDependencies>
             <History>
+            <Update release="8">
+                <Date>2026-11-15</Date>
+                <Version>0.1.7</Version>
+                <Comment>nix-manager 0.1.7 : correction du blocage de l installation</Comment>
+                <Name>Julien</Name>
+                <Email>julien_solus@use.startmail.com</Email>
+            </Update>
+
             <Update release="7">
                 <Date>2026-11-15</Date>
-                <Version>0.1.6</Version>
+                <Version>0.1.7</Version>
                 <Comment>nix-manager 0.1.6 : selection conservee entre les recherches, zoneinfo automatique</Comment>
                 <Name>Julien</Name>
                 <Email>julien_solus@use.startmail.com</Email>
@@ -588,10 +596,10 @@ qt6-base-gui. Non officiel.]]></Description>
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>3384632</InstalledSize>
-            <PackageSize>1285618</PackageSize>
-            <PackageHash>eb7cef2f2712f6b1c0f188d0b5a40801b1ea9bf0</PackageHash>
-            <PackageURI>n/nix-manager/nix-manager-0.1.6-7-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>3384928</InstalledSize>
+            <PackageSize>1285917</PackageSize>
+            <PackageHash>bd2a76e726f6ec64eb63ee1a0a4dd41beb1fd8c1</PackageHash>
+            <PackageURI>n/nix-manager/nix-manager-0.1.7-8-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>nix-manager</Name>
