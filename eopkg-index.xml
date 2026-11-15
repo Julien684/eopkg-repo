@@ -434,7 +434,7 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
 
             </RuntimeDependencies>
             <History>
-            <Update release="17">
+            <Update release="18">
             <Date>2026-11-15</Date>
             <Version>1.0.0</Version>
             <Comment>linuxon-appstream-catalog 1.0.0 : catalogue AppStream du depot (Discover / GNOME Software)</Comment>
@@ -447,9 +447,9 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
             <InstalledSize>62730</InstalledSize>
-            <PackageSize>63694</PackageSize>
-            <PackageHash>92eba31c330eb188cbd0d3d4a6031ebc862c59f0</PackageHash>
-            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-17-1-x86_64.eopkg</PackageURI>
+            <PackageSize>63693</PackageSize>
+            <PackageHash>b21ee2695d75ac931fa3151131d40d833bfa41bf</PackageHash>
+            <PackageURI>l/linuxon-appstream-catalog/linuxon-appstream-catalog-1.0.0-18-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>linuxon-appstream-catalog</Name>
@@ -528,9 +528,17 @@ qt6-base-gui. Non officiel.]]></Description>
             <Dependency>qt6-base-gui</Dependency>
             </RuntimeDependencies>
             <History>
+            <Update release="6">
+                <Date>2026-11-15</Date>
+                <Version>0.1.5</Version>
+                <Comment>nix-manager 0.1.5 : onglet Paquets, menu auto, zoneinfo</Comment>
+                <Name>Julien</Name>
+                <Email>julien_solus@use.startmail.com</Email>
+            </Update>
+
             <Update release="5">
                 <Date>2026-11-15</Date>
-                <Version>0.1.4</Version>
+                <Version>0.1.5</Version>
                 <Comment>nix-manager 0.1.4 : installation avec nettoyage des restes</Comment>
                 <Name>Julien</Name>
                 <Email>julien_solus@use.startmail.com</Email>
@@ -572,10 +580,10 @@ qt6-base-gui. Non officiel.]]></Description>
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>3347201</InstalledSize>
-            <PackageSize>1280967</PackageSize>
-            <PackageHash>e2a94e858d170d375c65cb0e886f7e02dc7af905</PackageHash>
-            <PackageURI>n/nix-manager/nix-manager-0.1.4-5-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>3383886</InstalledSize>
+            <PackageSize>1283770</PackageSize>
+            <PackageHash>0eccfb11174f2b66c2cded19c0821e667a3e32a1</PackageHash>
+            <PackageURI>n/nix-manager/nix-manager-0.1.5-6-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>nix-manager</Name>
