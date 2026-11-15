@@ -52,6 +52,21 @@ sudo appstreamcli refresh --source=os
 > Discover. Vérification : `appstreamcli search amv` doit renvoyer
 > `fr.julien68.AmvConverter`.
 
+#### Mettre à jour le catalogue AppStream (nouvelle application invisible)
+```bash
+sudo eopkg update-repo
+sudo eopkg upgrade linuxon-appstream-catalog
+sudo appstreamcli refresh --source=os
+```
+
+> `sudo eopkg install linuxon-appstream-catalog` répond « déjà installé » et ne
+> fait **aucune** mise à jour : c'est `upgrade` qui compare les numéros de
+> release. Sans cette étape, une application ajoutée récemment au dépôt
+> n'apparaît jamais dans Discover, alors que `eopkg info <paquet>` la trouve.
+> Vérifier la release installée : `eopkg list-installed | grep appstream-catalog`
+> (elle doit correspondre à celle de l'index). Après le `refresh`, relancer
+> Discover.
+
 #### Vérifier
 ```bash
 sudo eopkg list-repo
