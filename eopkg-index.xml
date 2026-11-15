@@ -472,7 +472,7 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
             <Dependency>qt6-base-gui</Dependency>
             </RuntimeDependencies>
             <History>
-            <Update release="1">
+            <Update release="3">
             <Date>2026-11-15</Date>
             <Version>1.0.3</Version>
             <Comment>Fork of deb-to-eopkg: adds RPM support and a Qt6 GUI.</Comment>
@@ -485,9 +485,9 @@ installation ou mise à jour de ce paquet, rafraîchir le cache AppStream avec
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
             <InstalledSize>2981651</InstalledSize>
-            <PackageSize>697571</PackageSize>
-            <PackageHash>a74604722fbeb9ef42c34a1422eb93d6be70bbac</PackageHash>
-            <PackageURI>e/eopkg-converter/eopkg-converter-1.0.3-1-1-x86_64.eopkg</PackageURI>
+            <PackageSize>697587</PackageSize>
+            <PackageHash>5936d55a7ad1a3aa204ee0af34b1fbe13d80b209</PackageHash>
+            <PackageURI>e/eopkg-converter/eopkg-converter-1.0.3-3-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>eopkg-converter</Name>
