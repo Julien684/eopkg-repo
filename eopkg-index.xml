@@ -330,67 +330,96 @@ dépendance runtime à part qt6-base (fourni par le système). Non officiel.]]><
         </Package>
         <Package>
             <Name>solus-external-kernel-manager</Name>
-            <Summary xml:lang="en"><![CDATA[Graphical Qt6 manager to install and manage external Linux kernels (CachyOS, Zen, Liquorix) on Solus]]></Summary>
-            <Summary xml:lang="fr"><![CDATA[Gestionnaire graphique Qt6 pour installer et gérer des noyaux Linux externes (CachyOS, Zen, Liquorix) sur Solus]]></Summary>
-            <Description xml:lang="en"><![CDATA[Solus External Kernel Manager is a small graphical manager (Qt6, written in Rust) that installs and manages external Linux kernels on a Solus distribution. Three providers are supported, one per tab: CachyOS kernels (mirror.cachyos.org), the Arch linux-zen kernel (extra repo) and the Liquorix linux-lqx kernel (liquorix.net). It reads the repository database, downloads the .pkg.tar.zst with SHA256 verification, discovers the real modules directory and vmlinuz from the archive, installs (modules + depmod, ESP copy, dracut initrd, systemd-boot entry) and can set the default boot kernel. The running kernel is protected against removal. CLI: --fetch-test, --install <kind>, --list. Requires Qt6 Base, dracut and systemd-boot (or clr-boot-manager) with the ESP mounted at /boot. Unofficial; not affiliated with Solus, CachyOS, Zen or Liquorix.]]></Description>
-            <Description xml:lang="fr"><![CDATA[Solus External Kernel Manager est un petit gestionnaire graphique (Qt6, écrit en Rust) qui installe et gère des noyaux Linux externes sur une distribution Solus. Trois fournisseurs sont pris en charge, un par onglet : les noyaux CachyOS (mirror.cachyos.org), le noyau linux-zen d'Arch (dépôt extra) et le noyau linux-lqx Liquorix (liquorix.net). Il lit la base du dépôt, télécharge le .pkg.tar.zst en vérifiant le SHA256, découvre le dossier de modules et le vmlinuz réels dans l'archive, installe (modules + depmod, copie sur l'ESP, initrd dracut, entrée systemd-boot) et peut choisir le noyau de démarrage par défaut. Le noyau en cours d'utilisation est protégé contre la suppression. Ligne de commande : --fetch-test, --install <kind>, --list. Nécessite Qt6 Base, dracut et systemd-boot (ou clr-boot-manager) avec l'ESP monté en /boot. Non officiel ; non affilié à Solus, CachyOS, Zen ni Liquorix.]]></Description>
+            <Summary xml:lang="en"><![CDATA[Graphical Qt6 manager to install external kernels (CachyOS, Zen, Liquorix) on Solus - experimental]]></Summary>
+            <Summary xml:lang="fr"><![CDATA[Gestionnaire graphique (Qt6) des noyaux externes (CachyOS, Zen, Liquorix) + compilation depuis kernel.org pour Solus - experimental]]></Summary>
+            <Description xml:lang="en"><![CDATA[solus-external-kernel-manager is a small graphical Qt6 manager that
+installs external kernels on a Solus distribution. Three providers are
+supported, each in its own tab: CachyOS (CachyOS repository, x86_64_v4
+generation with fallback to the previous one), Zen (Arch extra repository)
+and Liquorix (liquorix.net). The application reads the repository database,
+lists the available kernels, downloads the .pkg.tar.zst package with SHA256
+verification, then installs the modules, vmlinuz, initrd (dracut) and the
+systemd-boot/clr-boot-manager boot entry. The internal package layout is
+discovered dynamically. The running kernel is protected against removal.
+A CLI mode is provided (--install, --fetch-test). Experimental project,
+vibe-coded. Unofficial; not affiliated with Solus, CachyOS, the Zen kernel
+or Liquorix.]]></Description>
+            <Description xml:lang="fr"><![CDATA[solus-external-kernel-manager est un petit gestionnaire graphique
+(Qt6) qui installe des noyaux externes sur une distribution Solus. Trois
+fournisseurs sont pris en charge, chacun dans son onglet : CachyOS (depot
+CachyOS, generation x86_64_v4 avec repli sur l'ancienne generation),
+Zen (depot Arch extra) et Liquorix (liquorix.net). L'application lit la base
+du depot, liste les noyaux disponibles, telecharge le paquet .pkg.tar.zst
+avec verification SHA256, puis installe modules, vmlinuz, initrd (dracut)
+et l'entree de boot systemd-boot/clr-boot-manager. La structure interne du
+paquet est decouverte dynamiquement. Le noyau en cours est protege a la
+suppression. Mode CLI fourni (--install, --fetch-test). Projet
+experimental, developpe de facon 'vibe-coded'. Non officiel ; non affine a
+Solus ni aux projets CachyOS, Zen ou Liquorix.]]></Description>
             <PartOf>system.utilities</PartOf>
             <License>GPL-3.0-or-later</License>
             <RuntimeDependencies>
             <Dependency>dracut</Dependency>
             </RuntimeDependencies>
             <History>
+            <Update release="8">
+                <Date>2026-11-21</Date>
+                <Version>0.2.0</Version>
+                <Comment>solus-external-kernel-manager 0.2.0 rel23 : note de base a hauteur minimale garante (3 lignes) et onglet Avance agrandi a 720 px : le QLabel etait comprime verticalement, texte coupe ; verifie a 96 et 120 dpi ; rel22 : notes des bases raccourcies a 55 caracteres par ligne (elles etaient coupees : qtrs ne replie pas les QLabel) et rangee des etapes remise au-dessus des outils ; rel21 : « (recommande) » sur la base du noyau courant (retire de defconfig), note sans mention du PC de test, rangee dediee aux boutons outils et nettoyage au-dessus des etapes ; rel20 : base « config du noyau courant » par defaut quand disponible et proposee en tete (6544 modules, seule base sonore sur le PC de test), note d une seule base a la fois sous le selecteur, bouton de desinstallation des outils de compilation, libelles raccourcis pour tenir sur une ligne ; rel19 : codecs audio par puce (SND_HDA_CODEC_ALC269/ALC662/... : depuis 6.5 le codec Realtek ne suffit plus, cas reel d un ALC3234 sans son) ; rel18 : completude fiabilisee (2e passe apres olddefconfig, gelf.h/elfutils, noms de symboles corriges SENSORS_CORETEMP/USB_VIDEO_CLASS, booléens vs tristates), garde-fou limite aux essentiels fatals (zram + codecs audio) ; rel17 : passe de completude (zram, codecs audio, pare-feu, wireguard, exfat, fuse, bt, webcam, iwlwifi... reactives en modules au-dessus de toute base : 13 -> 57 modules verifies sur la VM), refus si un essentiel reste desactive, base choisie ecrite dans manager.log ; rel16 : base defconfig COMPLET par defaut (localmodconfig retirait btrfs, zram et le son : noyau sans racine, 60 s de timeouts, pas d audio) ; rel15 : garde-fou du systeme de fichiers racine (localmodconfig supprimait btrfs, noyau non demarrable) et bouton de suppression du noyau compile ; rel14 : monte /boot avant toute ecriture dans le chemin d installation commun (echec « tee: /boot/loader/entries » du noyau compile), refus « deja installe » base sur le registre pour permettre la reprise apres echec partiel ; rel13 : installation des outils sans meta-paquet (noms explicites, filtrage depot/deja installe), hauteur des onglets ajustee a la page (plus de vide sous les boutons) ; rel12 : corrige l echec de compilation par gelf.h manquant (elfutils-devel ajoute aux outils et au pre-vol), onglet systemd-boot dedie, table des versions limitee a 3 lignes, RC de nouveau proposes avec confirmation explicite (non signes), tests de non-regression (tests/nonregression.sh) ; rel11 : affichage du journal dans une fenetre (menu Fichier + bouton), version dans A propos, RC de kernel.org ecartes (404 de l URL .tar.gz), message d erreur de make sans les lignes de conclusion ; rel10 : bouton d installation des outils de compilation, barre animee pendant les operations, sortie de make recopiee dans le journal et le message d erreur ; rel9 : corrections tickets #1 (espace disque du repertoire de travail neuf) et #2 (parallelisme plafonne au nombre de coeurs) ; rel8 : onglet Avance - compilation d'un noyau kernel.org (signature PGP obligatoire, defconfig/localmodconfig, options -march=native et preemption, menuconfig, journal en direct, annulation), mode CLI --kernelorg-list/stage/build, fin d'installation commune avec les noyaux pacman</Comment>
+                <Name>Julien</Name>
+                <Email>julien_solus@use.startmail.com</Email>
+            </Update>
             <Update release="6">
-            <Date>2026-11-14</Date>
-            <Version>0.1.1</Version>
-            <Comment>solus-external-kernel-manager 0.1.1 rel6 : jauge /boot epaissie et inversee (remplissage = espace utilise), libelle utilise/total/libre</Comment>
-            <Name>Julien</Name>
-            <Email>julien_solus@use.startmail.com</Email>
+                <Date>2026-11-21</Date>
+                <Version>0.2.0</Version>
+                <Comment>solus-external-kernel-manager 0.2.0 rel6 : jauge /boot epaissie et inversee (remplissage = espace utilise), libelle utilise/total/libre</Comment>
+                <Name>Julien</Name>
+                <Email>julien_solus@use.startmail.com</Email>
             </Update>
             <Update release="5">
-            <Date>2026-11-14</Date>
-            <Version>0.1.1</Version>
-            <Comment>solus-external-kernel-manager 0.1.1 rel5 : jauge /boot corrigee (ESP reelle detectee via lsblk, mesure par montage ro temporaire + bouton Mesurer, option CLI --boot-space), cadre de jauge compact</Comment>
-            <Name>Julien</Name>
-            <Email>julien_solus@use.startmail.com</Email>
+                <Date>2026-11-21</Date>
+                <Version>0.2.0</Version>
+                <Comment>solus-external-kernel-manager 0.2.0 rel5 : jauge /boot corrigee (ESP reelle detectee via lsblk, mesure par montage ro temporaire + bouton Mesurer, option CLI --boot-space), cadre de jauge compact</Comment>
+                <Name>Julien</Name>
+                <Email>julien_solus@use.startmail.com</Email>
             </Update>
             <Update release="4">
-            <Date>2026-11-14</Date>
-            <Version>0.1.1</Version>
-            <Comment>solus-external-kernel-manager 0.1.1 rel4 : suppression de la dependance runtime dracut (verifiee a l'execution, bloquait l'installation eopkg)</Comment>
-            <Name>Julien</Name>
-            <Email>julien_solus@use.startmail.com</Email>
+                <Date>2026-11-21</Date>
+                <Version>0.2.0</Version>
+                <Comment>solus-external-kernel-manager 0.2.0 rel4 : suppression de la dependance runtime dracut (verifiee a l'execution, bloquait l'installation eopkg)</Comment>
+                <Name>Julien</Name>
+                <Email>julien_solus@use.startmail.com</Email>
             </Update>
             <Update release="3">
-            <Date>2026-10-28</Date>
-            <Version>0.1.1</Version>
-            <Comment>solus-external-kernel-manager 0.1.1 rel3 : jauge espace libre /boot (total + libre), logo Tux + cle a molette (icone fenetre + theme hicolor), tests unitaires statfs/fmt_bytes</Comment>
-            <Name>Julien</Name>
-            <Email>julien_solus@use.startmail.com</Email>
+                <Date>2026-10-28</Date>
+                <Version>0.2.0</Version>
+                <Comment>solus-external-kernel-manager 0.2.0 rel3 : jauge espace libre /boot (total + libre), logo Tux + cle a molette (icone fenetre + theme hicolor), tests unitaires statfs/fmt_bytes</Comment>
+                <Name>Julien</Name>
+                <Email>julien_solus@use.startmail.com</Email>
             </Update>
             <Update release="2">
-            <Date>2026-10-28</Date>
-            <Version>0.1.1</Version>
-            <Comment>solus-external-kernel-manager 0.1.1 rel2 : option CLI --list</Comment>
-            <Name>Julien</Name>
-            <Email>julien_solus@use.startmail.com</Email>
+                <Date>2026-10-28</Date>
+                <Version>0.2.0</Version>
+                <Comment>solus-external-kernel-manager 0.2.0 rel2 : option CLI --list</Comment>
+                <Name>Julien</Name>
+                <Email>julien_solus@use.startmail.com</Email>
             </Update>
             <Update release="1">
-            <Date>2026-10-26</Date>
-            <Version>0.1.1</Version>
-            <Comment>solus-external-kernel-manager 0.1.1 : fix Zen listing/removal (registry + modern module names), per-tab actions</Comment>
-            <Name>Julien</Name>
-            <Email>julien_solus@use.startmail.com</Email>
+                <Date>2026-10-26</Date>
+                <Version>0.2.0</Version>
+                <Comment>solus-external-kernel-manager 0.2.0 : fix Zen listing/removal (registry + modern module names), per-tab actions</Comment>
+                <Name>Julien</Name>
+                <Email>julien_solus@use.startmail.com</Email>
             </Update>
-            </History>
+        </History>
             <BuildHost>solus-local</BuildHost>
             <Distribution>Solus</Distribution>
             <DistributionRelease>1</DistributionRelease>
             <Architecture>x86_64</Architecture>
-            <InstalledSize>3867543</InstalledSize>
-            <PackageSize>1447836</PackageSize>
-            <PackageHash>87ab02169cbaa5b2b670cddc0bf42bf77b3fb421</PackageHash>
-            <PackageURI>s/solus-external-kernel-manager/solus-external-kernel-manager-0.1.1-7-1-x86_64.eopkg</PackageURI>
+            <InstalledSize>4281573</InstalledSize>
+            <PackageSize>1589542</PackageSize>
+            <PackageHash>effd1feeef18d30fa85e71558f37b0581d4e6c57</PackageHash>
+            <PackageURI>s/solus-external-kernel-manager/solus-external-kernel-manager-0.2.0-23-1-x86_64.eopkg</PackageURI>
             <PackageFormat>1.2</PackageFormat>
             <Source>
                 <Name>solus-external-kernel-manager</Name>
